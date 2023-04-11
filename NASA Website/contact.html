@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<link rel="stylesheet" media="(min-width: 900px)" href="css/default_style.css">
+<link rel="stylesheet" media="(max-width: 450px)" href="css/mobile_style.css">
+<link rel="stylesheet" media="(max-width: 900px) and (min-width: 451px)" href="css/tablet_style.css">
+<title> Contact Us </title>  
+
+<meta charset="UTF-8">
+<meta name="author" content="Zack Johnson">
+<meta name="keywords" content="contact, email, names">
+<meta name="description" content="a page to contact the website administrators">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div class="wrapper">
+<header><!-- Course: CIS133DA 
+    Section: 27236
+    Lesson: Final Project -->
+<h1> Contact Us </h1> 
+<nav>
+<div class="dropdownmenu">
+<span>More Information</span>
+<div class="dropdownlinks">
+<a href="../Lesson13/homepage.html">Home</a>
+<a href="../Lesson13/causes.html">Causes</a>
+<a href="../Lesson13/impact.html">Impact</a>
+<a href="../Lesson13/solutions.html">Solutions</a>
+<a href="../Lesson13/policy.html">Site Policies</a>
+</div>
+</div>
+</nav>
+</header>
+<main>
+<h2>If you have any questions or suggestions, or would like to know more about our site, please feel free to reach out us using this form:</h2>
+ 
+<form action="https://secure.riosalado.edu/cis-course-resources/postscript.aspx" method="post">
+
+<h3>Contact Information</h3>
+
+<div class="contact">
+    <label for="name">First and Last Name:</label>
+    <input type="text" name="name" id="name" >
+    
+    <label for="email">Email Address:</label>
+    <input type="email" name="useremail">
+     </div>
+
+    
+     <h3><label for="description">Include your message here: </label></h3>
+     <textarea rows="6" cols="30" name="description" id="description"></textarea>
+     <br>
+     
+   
+
+     <button type="reset" onclick="unhideReset()">Reset Form</button>
+     <button type="submit" onclick="alert('Thank You for Contacting Us!')">Submit Form</button>
+</form>
+<p id="resetmessage" style="visibility: hidden;">The Form Has Been Reset</p>
+
+</main>
+ <footer>
+ <b>Phone</b>: 555-867-5309<br>
+ <b>Email</b>: ZAC2214539@maricopa.edu
+ <p><small> Copyright&copy; 2021 by Zachary Johnson</small> </p>
+</footer>
+</div>
+<script src="javascript.js"></script>
+</body>
+</html>

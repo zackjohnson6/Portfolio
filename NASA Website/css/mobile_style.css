@@ -1,0 +1,223 @@
+/*This .css file will be loaded if the devices
+size is smaller than 450 pixels*/
+
+/*Zack Johnson
+CIS 133DA*/
+
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+font-size: 10px;
+background-color: black;
+}
+
+/*reduced width to be below 450px, which was set as the parameters so this .css sheet would be used*/
+.wrapper{ 
+width: 400px;
+margin-left:auto;
+margin-right:auto;
+background-color: whitesmoke;
+position:relative;
+}
+/*Header Style Begins Here*/ /*reduced width to be below 450px, which was set as the parameters so this .css sheet would be used*/
+header{
+background-image: url('images/background.jpg');
+background-repeat: repeat-x;
+background-size: 400px 200px;
+text-align: center;
+color: green;
+}
+/*reduced width to be below 450px, which was set as the parameters so this .css sheet would be used. Also reduced font size*/
+h1{
+font-family: 'Times New Roman', Times, serif;
+font-size: 40px;
+padding-top: 25px;
+padding-bottom: 25px;
+margin: 0;
+height: 50px; 
+width: 400px;
+box-sizing: content-box;
+}
+/*reduced width to be below 450px, which was set as the parameters so this .css sheet would be used*/
+header p{ 
+font-style: italic;
+padding-bottom: 10px;
+padding-top: 10px;
+margin: 0;
+width: 400px;
+height: 50px; 
+box-sizing: border-box;
+}
+/*reduced width to be below 450px, which was set as the parameters so this .css sheet would be used*/
+header nav{ 
+background-color: palevioletred;
+padding-top: 15px;
+padding-bottom: 15px;
+width: 400px;
+height: 50px;
+box-sizing: border-box;
+}
+/*Nav Menu Styling Begins Here*/
+nav a, .dropdownmenu span{
+padding: 15px;
+text-align: center;
+text-decoration: none;
+color: purple;}
+
+.dropdownmenu{
+display: inline-block;
+position: relative;
+height: 34px;}
+
+.dropdownlinks a{
+display:block;
+padding: 8px;
+text-align: left;
+}
+/*reduced width so elements would line up exactly*/
+.dropdownlinks{
+position: absolute;
+top: 35px;
+width: 165px;
+background-color: pink;
+;border: thin solid darkblue;
+display: none;
+}
+
+nav a :hover, .dropdownmenu span:hover, .dropdownlinks a:hover{
+background-color: yellow;
+color: red;}
+
+.dropdownmenu:hover .dropdownlinks{display:block}
+
+/* Main styling begins here*/
+main{
+padding: 10px; 
+display: block   
+}
+
+h2{
+    text-align: center;
+    }
+    
+    .earth{
+    display: inline-block; 
+    padding-left: 45px;
+    font-size: x-small;
+    text-align: center;
+    }
+    
+    .graph{display: inline-block;
+}
+    
+    .coal{
+    display: inline-block; 
+    width: auto;   
+    font-size: small;
+    text-align: center;
+    }
+    
+    .factory{
+    display:inline-block;
+    width: auto;
+    font-size: small;
+    text-align: center;
+    }
+    
+    table{
+    width: 100%;    
+    }
+    
+    table, th, td{
+    border:1px solid black;
+    background-color:lightblue;
+    color:darkblue;
+    border-collapse:collapse;
+    padding:10px;
+    }
+    
+    .forest{
+    display:inline-block;
+    width: 50%;
+    font-size: small;
+    text-align: center;    
+    }
+    
+    .sea{
+    display: inline-block;
+    width: 50%;
+    font-size: small;
+    text-align: center;
+    }
+    
+    .soil{
+    display: inline-block;
+    width: 50%;
+    font-size: small;
+    text-align: center;    
+    }
+    
+    .hurricane{
+    display: inline-block;
+    width: 50%;
+    font-size: small;
+    text-align: center;    
+    }
+    
+    .law{
+    display: inline-block;
+    width: 50%;
+    font-size: small;
+    text-align: center;    
+    }
+    
+    .nuclear{
+    display: inline-block;
+    width: 50%;
+    font-size: small;
+    text-align: center;    
+    }
+    
+    label{
+        display: block;
+       margin: 5px;}
+       
+       label, input, textarea{
+       margin-left: 15px;
+       }
+    
+       
+       .contact input{
+       margin-left: 45px;
+       }
+       
+       button{
+       margin-top: 10px;
+       margin-bottom: 10px;
+       margin-left: 5px;
+       margin-right: 5px;
+       padding-top: 5px;
+       padding-bottom: 5px;
+       padding-left: 10px;
+       padding-right: 10px;}
+       
+       button:hover{
+       background-color: yellow;
+       color: red;}
+       
+
+
+/* Footer styling begins here*/
+footer{
+text-align: center;
+background-color: red;
+color: darkgoldenrod;
+padding-top: 8px;
+padding-bottom: 8px;
+padding-right: 0px;
+padding-left: 0px;
+}
+footer p{
+padding-top: 8px;
+margin: 0;
+}

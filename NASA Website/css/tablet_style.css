@@ -1,0 +1,172 @@
+/*This .css file will be loaded if the devices
+size is smaller than 900 pixels*/
+
+/*Zack Johnson
+CIS 133DA*/
+
+
+body{
+    font-family: Verdana, Tahoma, sans-serif;
+font-size: 16px;
+background-color: #A1E230;
+}
+/*reduced width to between 451px and 900px to fit within parameters set to use style sheet. Had issues initially as I did not have the correct
+media query set up in the HTML, so mobile was not being used. Very frustrating, but I figured it out in the end, as you will hopefully see.*/
+.wrapper{ 
+width: 768px;
+margin-left:auto;
+margin-right:auto;
+background-color: #32B5B1;
+position:relative;
+}
+
+/*reduced width to between 451px and 900px to fit within parameters set to use style sheet.*/
+/*Header Style Begins Here*/
+header{
+background-image: url('images/background.jpg');
+background-repeat: repeat-x;
+background-size: 768px 200px;
+text-align: center;
+color:#78331A;
+}
+/*reduced width to between 451px and 900px to fit within parameters set to use style sheet.*/
+h1{
+font-family: 'Times New Roman', Times, serif;
+font-size: 80px;
+padding-top: 25px;
+padding-bottom: 25px;
+margin: 0;
+height: 50px; 
+width: 768px;
+box-sizing: content-box;
+}
+/*reduced width to between 451px and 900px to fit within parameters set to use style sheet.*/
+header p{ 
+font-style: italic;
+padding-bottom: 10px;
+padding-top: 20px;
+margin: 0;
+width: 768px;
+height: 50px; 
+box-sizing: border-box;
+}
+/*reduced width to between 451px and 900px to fit within parameters set to use style sheet.*/
+header nav{ 
+background-color: lightblue;
+padding-top: 15px;
+padding-bottom: 15px;
+width: 768px;
+height: 50px;
+box-sizing: border-box;
+}
+/*Nav Menu Styling Begins Here*/
+nav a, .dropdownmenu span{
+padding: 15px;
+text-align: center;
+text-decoration: none;
+color: darkblue;}
+
+.dropdownmenu{
+display: inline-block;
+position: relative;
+height: 34px;}
+
+.dropdownlinks a{
+display:block;
+padding: 8px;
+text-align: left;
+}
+
+/*reduced width so elements would line up exactly*/
+.dropdownlinks{
+position: absolute;
+top: 35px;
+width: 165px;
+background-color: lightgray;
+;border: thin solid darkblue;
+display: none;
+}
+
+nav a :hover, .dropdownmenu span:hover, .dropdownlinks a:hover{
+background-color: darkblue;
+color: red;}
+
+.dropdownmenu:hover .dropdownlinks{display:block}
+
+/* Main styling begins here*/
+main{
+padding: 10px;    
+display: inline-block}
+
+/*Card styling begins here*/
+.card1{
+    width: 300px;
+    height: auto;
+    margin-left: 25px;
+    margin-top: 35px;
+    text-align: center;
+    border: thin solid darkblue;
+    display: inline-block;
+    }
+    
+    .card1 h3{
+    background-color: darkblue;
+    width: auto;
+    text-align: left;
+    color: whitesmoke;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 0;
+    }
+    
+    .card2{
+    width: 300px;
+    height: auto;
+    margin-left: 100px;
+    margin-bottom: 50px;
+    text-align: center;
+    border: thin solid darkblue;
+    display:inline-block;
+    }
+    
+    .card2 h3{
+        background-color: darkblue;
+        width: auto;
+        text-align: left;
+        color: whitesmoke;
+        padding: 10px;
+        box-sizing: border-box;
+        margin: 0;}
+    
+    .card3{
+        width: 400px;
+        height: auto;
+        margin: auto;
+        text-align: center;
+        border: thin solid darkblue;  
+    }
+    
+    .card3 h3{
+        background-color: darkblue;
+        width: auto;
+        text-align: left;
+        color: whitesmoke;
+        padding: 10px;
+        box-sizing: border-box;
+        margin: 0;}
+
+
+/* Footer styling begins here*/
+footer{
+text-align: center;
+background-color: #AD12B5;
+color: darkgoldenrod;
+padding-top: 8px;
+padding-bottom: 8px;
+padding-right: 0px;
+padding-left: 0px;
+}
+footer p{
+padding-top: 8px;
+margin: 0;
+}

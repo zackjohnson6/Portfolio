@@ -1,0 +1,226 @@
+/* 900px was selected because the majority of content is viewed on computer monitors, which are larger than both phone and tablet screens.
+Since computer monitors are the most common devices used to view content, it only makes sense to have the default .css file be created with those devices in mind.*/
+
+/*Zack Johnson
+CIS 133DA*/
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+font-size: 20px;
+background-color:black;
+}
+
+.wrapper{ 
+width: 900px;
+margin-left:auto;
+margin-right:auto;
+background-color: lightgray;
+position:relative;
+}
+/*Header Style Begins Here*/
+header{
+background-image: url('images/background.jpg');
+background-repeat: repeat-x;
+background-size: 900px 200px;
+text-align: center;
+color: white;
+}
+h1{
+font-family: 'Times New Roman', Times, serif;
+font-size: 80px;
+padding-top: 25px;
+padding-bottom: 25px;
+margin: 0;
+height: 100px; /*directions called for 1/2 of the total height, which is 200px, therefore the height here is 100px*/
+width: 900px;
+box-sizing: content-box;
+}
+header p{ 
+font-style: italic;
+padding-bottom: 10px;
+padding-top: 10px;
+margin: 0;
+width: 900px;
+height: 50px; /*directions called for 1/4 of total height, which is 200px, therefore the height here is 50px*/
+box-sizing: border-box;
+}
+
+header nav{ 
+background-color: lightblue;
+padding-top: 15px;
+padding-bottom: 15px;
+width: 900px;
+height: 50px;/*directions called for 1/4 of total height, which is 200px, therefore the height here is 50px*/
+box-sizing: border-box;
+}
+
+/*Nav Menu Styling Begins Here*/
+nav a, .dropdownmenu span{
+padding: 15px;
+text-align: center;
+text-decoration: none;
+color: darkblue;}
+
+.dropdownmenu{
+display: inline-block;
+position: relative;
+height: 34px;}
+
+.dropdownlinks a{
+display:block;
+padding: 8px;
+text-align: left;
+}
+
+.dropdownlinks{
+position: absolute;
+background-color: lightgray;
+border: thin solid darkblue;
+display: none;
+overflow: hidden;
+}
+
+nav a :hover, .dropdownmenu span:hover, .dropdownlinks a:hover{
+background-color: darkblue;
+color: red;}
+
+.dropdownmenu:hover .dropdownlinks{display:block}
+
+/* Main styling begins here
+
+starting at .earth through .nuclear, I chose to use class selectors rather than inline, as I needed to add enough padding
+to either side of the image so it would be centered. Also, it was much easier to group the image and caption and indicate on the css sheet that I 
+wanted the text be very small and centered under the image. I could have done this inline, but but doing it through the style sheet essentially allowed me 
+to make a template to copy and paste and adjust as needed, saving me a ton of time.*/
+main{
+padding: 10px;    
+display:inline;}
+
+h2{
+text-align: center;
+}
+
+.earth{
+display: inline-block; 
+padding-left: 285px;
+font-size: x-small;
+text-align: center;
+}
+
+.graph{
+display: inline-block; 
+text-align: justify;   
+}
+
+.coal{
+display: inline-block;    
+padding-left: 250px;
+font-size: small;
+text-align: center;
+}
+
+.factory{
+display:inline-block;
+padding-left: 215px;
+font-size: small;
+text-align: center;
+}
+
+table{
+width: 100%;    
+}
+
+table, th, td{
+border:1px solid black;
+background-color:lightblue;
+color:darkblue;
+border-collapse:collapse;
+padding:10px;
+}
+
+.forest{
+display:inline-block;
+padding-left: 215px;
+font-size: small;
+text-align: center;    
+}
+
+.sea{
+display: inline-block;
+padding-left: 250px;    
+font-size: small;
+text-align: center;
+}
+
+.soil{
+display: inline-block;
+padding-left: 240px;
+font-size: small;
+text-align: center;    
+}
+
+.hurricane{
+display: inline-block;
+padding-left: 100px;
+font-size: small;
+text-align: center;    
+}
+
+.law{
+display: inline-block;
+padding-left: 200px;
+font-size: small;
+text-align: center;    
+}
+
+.nuclear{
+display: inline-block;
+padding-left: 230px;
+font-size: small;
+text-align: center;    
+}
+
+label{
+    display: block;
+   margin: 5px;}
+   
+   label, input, textarea{
+   margin-left: 15px;
+   }
+
+   
+   .contact input{
+   margin-left: 45px;
+   }
+   
+   button{
+   margin-top: 10px;
+   margin-bottom: 10px;
+   margin-left: 5px;
+   margin-right: 5px;
+   padding-top: 5px;
+   padding-bottom: 5px;
+   padding-left: 10px;
+   padding-right: 10px;}
+   
+   button:hover{
+   background-color: yellow;
+   color: red;}
+   
+
+
+
+/* Footer styling begins here*/
+footer{
+text-align: center;
+background-color: darkblue;
+color: darkgoldenrod;
+padding-top: 8px;
+padding-bottom: 8px;
+padding-right: 0px;
+padding-left: 0px;
+}
+footer p{
+padding-top: 8px;
+margin: 0;
+}
