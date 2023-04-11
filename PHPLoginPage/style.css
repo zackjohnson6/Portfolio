@@ -1,0 +1,32 @@
+/* Zack Johnson, ZAC2214539 3/26/23 */
+html, body{
+    font-family: Times New Roman, Helvetica, sans-serif;
+    background-color: whitesmoke;
+    font-size: 16px;
+    color: black;
+}
+
+label{
+    background-color: white;
+    color: blue;
+    font-size: 18px;
+    border: solid thin black;
+    padding: 3px;
+}
+
+form{
+    margin-left: 500px;
+    margin-top: 350px;
+}
+
+input{
+    background-color: white;
+    color: black;
+    border: solid thin black;
+    font-size: 18px;
+    margin: 5px;
+}
+
+h1{
+    color: darkgreen;
+}
