@@ -1,0 +1,225 @@
+/* consistent page stylings that carry over to every page */
+body{
+    background-color: navy;
+}
+
+header h1{
+    text-align: center;
+    color: orangered;
+}
+
+nav{
+    text-align: center;
+    padding: 5px;
+    border-bottom: solid orangered 1px;
+    }
+
+nav a{
+    color: orangered;
+    padding: 5px;
+}
+
+nav a:hover{
+    color: navy;
+    background-color: orangered;
+}
+
+#heading{
+    text-align: center;
+    color: orangered;
+}
+
+/*home page styling begins here*/
+
+.home p{
+    color: orangered;
+    font-size: 24px;
+}
+
+/*Array page styling starts here. (Hall of Famers)
+*/
+
+
+.container1{
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    }
+    
+
+    .bearshof{
+    background-color: orangered;
+    padding: 100px;
+    color: white;
+    font-size: 22px;
+    }
+
+#hof{
+    color: white;
+    text-align: center;
+    font-size: 18px;
+}
+
+/* function page styling starts here (Quick Facts) */
+ul{
+    background-color: orangered;
+    text-align: center;
+}
+
+li{
+    color: white;
+    font-size: 22px;
+    padding: 10px;
+}
+
+/* DOM page styling starts here (Brief History) */
+main {
+    width: 1100px;
+    max-width: 100%;
+    margin: 0 auto;
+    color: white;
+   
+  }
+  
+  header.header {
+      text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    color: orangered;
+  }
+
+.dom{
+    background-color: orangered;
+}
+
+.dom h2{
+    color: navy;
+}
+
+/* Event page styling begins here (Trivia) */
+.walter h2, .walter p{
+color: orangered;
+}
+
+.walter p{
+    font-size: 24px;
+    border-bottom: solid thin orangered;
+}
+
+.devin h2, .devin p{
+    color: orangered;
+}
+
+.devin p{
+    font-size: 24px;
+    border-bottom: solid thin orangered;
+}
+
+.jay h2, .jay p{
+    color: orangered;
+}
+
+.jay p{
+    font-size: 24px;
+    border-bottom: solid thin orangered;
+}
+
+.soldier h2, .soldier p{
+    color: orangered;
+}
+
+.soldier p{
+    font-size: 24px;
+    border-bottom: solid thin orangered;
+}
+
+/* jquery page styling begins here. (Photos) */
+
+#slideshow{
+    margin-top: 80px;
+    margin-bottom: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    height: 400px;
+    width: 400px;
+    padding: 10px;
+    box-shadow: 0 0 45px orangered;
+}
+
+#slideshow div{
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+}
+
+/* media queries */
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+    
+    
+  }
+  
+  /* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+  
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    
+   
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    
+    
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    
+    
+    
+  }
+  
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+    
+   
+    
+  }
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+    
+    
+    
+  }
+      

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<header>
+    <h1>Bears Trivia</h1>
+    <nav>
+        <a href="index.html">My Projects</a>
+        <a href="arrays.html">Hall of Famers</a>
+        <a href="functions.html">Quick Facts</a>
+        <a href="dom.html">A Short History</a>
+        <a href="events.html">Trivia</a>
+        <a href="jquery.html">Photos</a>
+    </nav>
+</header>
+<body>
+    <!--Image found on web. https://www.dreamstime.com/editorial-stock-photo-walter-payton-chicago-bears-former-superstar-image-taken-color-slide-image73480543. Stock photo by Jerry Coli-->
+    <!--Hover Event-->
+    <div class="walter" id="hover">
+    <h2>Can you name this player? Mouse over the picture to see the answer!</h2>
+    <img src="images/walter.jpg" alt="a football player" width="300px" height="300px">
+    <p id="display"></p>
+</div>
+
+<!--Click Event-->
+<!--Image found on web. "Devin Hester" by Mike Morbeck is marked with CC BY-SA 2.0.-->
+<div class="devin" id="click">
+    <h2>How many total return touchdowns does Devin Hester have? Click on the image to see the answer! (Hint: it's an all-time NFL record)</h2>
+    <img src="images/devin.jpg" alt="devin hester">
+<p id="msg"></p>
+</div>
+
+
+<!-- Double Click Event-->
+<!--image found on web. "American football in Tel-Aviv, Israel" by RonAlmog is marked with CC BY 2.0. -->
+<div class="jay" id="double">
+<h2>Who is the Bears` all-time leader in passing yards? Double click the football for the answer! </h2>
+<img src="images/football.jpg" alt="a football" width="250px" height="250px">
+<p id="finish"></p>
+</div>
+
+<!--Mouse Out Event-->
+<!--Image found on web. "Soldier Field stadium from above" by marcoverch is marked with CC BY 2.0.-->
+<div class="soldier" id="out">
+<h2>What is the name of the stadium that the Bears play in? Move your cursor over the photo, and then back out, for the answer!</h2>
+<img src="images/soldier.jpg" alt="stadium" width="300px" height="300px">
+<p id="done"></p>
+</div>
+<script src="js/events.js"></script>
+</body>
+</html>
