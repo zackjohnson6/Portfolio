@@ -1,0 +1,17 @@
+C:\Users\zacks\source\repos\FractionCalculatorWithGUI_Final\bin\Debug\net6.0-windows\FractionCalculatorWithGUI_Final.exe
+C:\Users\zacks\source\repos\FractionCalculatorWithGUI_Final\bin\Debug\net6.0-windows\FractionCalculatorWithGUI_Final.deps.json
+C:\Users\zacks\source\repos\FractionCalculatorWithGUI_Final\bin\Debug\net6.0-windows\FractionCalculatorWithGUI_Final.runtimeconfig.json
+C:\Users\zacks\source\repos\FractionCalculatorWithGUI_Final\bin\Debug\net6.0-windows\FractionCalculatorWithGUI_Final.dll
+C:\Users\zacks\source\repos\FractionCalculatorWithGUI_Final\bin\Debug\net6.0-windows\FractionCalculatorWithGUI_Final.pdb
+C:\Users\zacks\source\repos\FractionCalculatorWithGUI_Final\obj\Debug\net6.0-windows\FractionCalculatorWithGUI_Final.csproj.AssemblyReference.cache
+C:\Users\zacks\source\repos\FractionCalculatorWithGUI_Final\obj\Debug\net6.0-windows\FractionCalculatorWithGUI_Final.MainForm.resources
+C:\Users\zacks\source\repos\FractionCalculatorWithGUI_Final\obj\Debug\net6.0-windows\FractionCalculatorWithGUI_Final.csproj.GenerateResource.cache
+C:\Users\zacks\source\repos\FractionCalculatorWithGUI_Final\obj\Debug\net6.0-windows\FractionCalculatorWithGUI_Final.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\zacks\source\repos\FractionCalculatorWithGUI_Final\obj\Debug\net6.0-windows\FractionCalculatorWithGUI_Final.AssemblyInfoInputs.cache
+C:\Users\zacks\source\repos\FractionCalculatorWithGUI_Final\obj\Debug\net6.0-windows\FractionCalculatorWithGUI_Final.AssemblyInfo.cs
+C:\Users\zacks\source\repos\FractionCalculatorWithGUI_Final\obj\Debug\net6.0-windows\FractionCalculatorWithGUI_Final.csproj.CoreCompileInputs.cache
+C:\Users\zacks\source\repos\FractionCalculatorWithGUI_Final\obj\Debug\net6.0-windows\FractionCalculatorWithGUI_Final.dll
+C:\Users\zacks\source\repos\FractionCalculatorWithGUI_Final\obj\Debug\net6.0-windows\refint\FractionCalculatorWithGUI_Final.dll
+C:\Users\zacks\source\repos\FractionCalculatorWithGUI_Final\obj\Debug\net6.0-windows\FractionCalculatorWithGUI_Final.pdb
+C:\Users\zacks\source\repos\FractionCalculatorWithGUI_Final\obj\Debug\net6.0-windows\FractionCalculatorWithGUI_Final.genruntimeconfig.cache
+C:\Users\zacks\source\repos\FractionCalculatorWithGUI_Final\obj\Debug\net6.0-windows\ref\FractionCalculatorWithGUI_Final.dll
