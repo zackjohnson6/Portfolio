@@ -1,0 +1,45 @@
+C:\Users\zacks\source\repos\AnimalFarm\bin\Debug\net6.0\AnimalFarm.exe
+C:\Users\zacks\source\repos\AnimalFarm\bin\Debug\net6.0\AnimalFarm.deps.json
+C:\Users\zacks\source\repos\AnimalFarm\bin\Debug\net6.0\AnimalFarm.runtimeconfig.json
+C:\Users\zacks\source\repos\AnimalFarm\bin\Debug\net6.0\AnimalFarm.dll
+C:\Users\zacks\source\repos\AnimalFarm\bin\Debug\net6.0\AnimalFarm.pdb
+C:\Users\zacks\source\repos\AnimalFarm\obj\Debug\net6.0\AnimalFarm.csproj.AssemblyReference.cache
+C:\Users\zacks\source\repos\AnimalFarm\obj\Debug\net6.0\AnimalFarm.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\zacks\source\repos\AnimalFarm\obj\Debug\net6.0\AnimalFarm.AssemblyInfoInputs.cache
+C:\Users\zacks\source\repos\AnimalFarm\obj\Debug\net6.0\AnimalFarm.AssemblyInfo.cs
+C:\Users\zacks\source\repos\AnimalFarm\obj\Debug\net6.0\AnimalFarm.csproj.CoreCompileInputs.cache
+C:\Users\zacks\source\repos\AnimalFarm\obj\Debug\net6.0\AnimalFarm.dll
+C:\Users\zacks\source\repos\AnimalFarm\obj\Debug\net6.0\refint\AnimalFarm.dll
+C:\Users\zacks\source\repos\AnimalFarm\obj\Debug\net6.0\AnimalFarm.pdb
+C:\Users\zacks\source\repos\AnimalFarm\obj\Debug\net6.0\AnimalFarm.genruntimeconfig.cache
+C:\Users\zacks\source\repos\AnimalFarm\obj\Debug\net6.0\ref\AnimalFarm.dll
+C:\Users\zacks\Desktop\School\CIS162AD (C#)\Lesson7\AnimalFarm\bin\Debug\net6.0\AnimalFarm.exe
+C:\Users\zacks\Desktop\School\CIS162AD (C#)\Lesson7\AnimalFarm\bin\Debug\net6.0\AnimalFarm.deps.json
+C:\Users\zacks\Desktop\School\CIS162AD (C#)\Lesson7\AnimalFarm\bin\Debug\net6.0\AnimalFarm.runtimeconfig.json
+C:\Users\zacks\Desktop\School\CIS162AD (C#)\Lesson7\AnimalFarm\bin\Debug\net6.0\AnimalFarm.dll
+C:\Users\zacks\Desktop\School\CIS162AD (C#)\Lesson7\AnimalFarm\bin\Debug\net6.0\AnimalFarm.pdb
+C:\Users\zacks\Desktop\School\CIS162AD (C#)\Lesson7\AnimalFarm\obj\Debug\net6.0\AnimalFarm.csproj.AssemblyReference.cache
+C:\Users\zacks\Desktop\School\CIS162AD (C#)\Lesson7\AnimalFarm\obj\Debug\net6.0\AnimalFarm.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\zacks\Desktop\School\CIS162AD (C#)\Lesson7\AnimalFarm\obj\Debug\net6.0\AnimalFarm.AssemblyInfoInputs.cache
+C:\Users\zacks\Desktop\School\CIS162AD (C#)\Lesson7\AnimalFarm\obj\Debug\net6.0\AnimalFarm.AssemblyInfo.cs
+C:\Users\zacks\Desktop\School\CIS162AD (C#)\Lesson7\AnimalFarm\obj\Debug\net6.0\AnimalFarm.csproj.CoreCompileInputs.cache
+C:\Users\zacks\Desktop\School\CIS162AD (C#)\Lesson7\AnimalFarm\obj\Debug\net6.0\AnimalFarm.dll
+C:\Users\zacks\Desktop\School\CIS162AD (C#)\Lesson7\AnimalFarm\obj\Debug\net6.0\refint\AnimalFarm.dll
+C:\Users\zacks\Desktop\School\CIS162AD (C#)\Lesson7\AnimalFarm\obj\Debug\net6.0\AnimalFarm.pdb
+C:\Users\zacks\Desktop\School\CIS162AD (C#)\Lesson7\AnimalFarm\obj\Debug\net6.0\AnimalFarm.genruntimeconfig.cache
+C:\Users\zacks\Desktop\School\CIS162AD (C#)\Lesson7\AnimalFarm\obj\Debug\net6.0\ref\AnimalFarm.dll
+C:\Users\zacks\Desktop\School\CIS162AD (C#)\Lesson7\Lesson7_ZAC2214539\bin\Debug\net6.0\AnimalFarm.exe
+C:\Users\zacks\Desktop\School\CIS162AD (C#)\Lesson7\Lesson7_ZAC2214539\bin\Debug\net6.0\AnimalFarm.deps.json
+C:\Users\zacks\Desktop\School\CIS162AD (C#)\Lesson7\Lesson7_ZAC2214539\bin\Debug\net6.0\AnimalFarm.runtimeconfig.json
+C:\Users\zacks\Desktop\School\CIS162AD (C#)\Lesson7\Lesson7_ZAC2214539\bin\Debug\net6.0\AnimalFarm.dll
+C:\Users\zacks\Desktop\School\CIS162AD (C#)\Lesson7\Lesson7_ZAC2214539\bin\Debug\net6.0\AnimalFarm.pdb
+C:\Users\zacks\Desktop\School\CIS162AD (C#)\Lesson7\Lesson7_ZAC2214539\obj\Debug\net6.0\AnimalFarm.csproj.AssemblyReference.cache
+C:\Users\zacks\Desktop\School\CIS162AD (C#)\Lesson7\Lesson7_ZAC2214539\obj\Debug\net6.0\AnimalFarm.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\zacks\Desktop\School\CIS162AD (C#)\Lesson7\Lesson7_ZAC2214539\obj\Debug\net6.0\AnimalFarm.AssemblyInfoInputs.cache
+C:\Users\zacks\Desktop\School\CIS162AD (C#)\Lesson7\Lesson7_ZAC2214539\obj\Debug\net6.0\AnimalFarm.AssemblyInfo.cs
+C:\Users\zacks\Desktop\School\CIS162AD (C#)\Lesson7\Lesson7_ZAC2214539\obj\Debug\net6.0\AnimalFarm.csproj.CoreCompileInputs.cache
+C:\Users\zacks\Desktop\School\CIS162AD (C#)\Lesson7\Lesson7_ZAC2214539\obj\Debug\net6.0\AnimalFarm.dll
+C:\Users\zacks\Desktop\School\CIS162AD (C#)\Lesson7\Lesson7_ZAC2214539\obj\Debug\net6.0\refint\AnimalFarm.dll
+C:\Users\zacks\Desktop\School\CIS162AD (C#)\Lesson7\Lesson7_ZAC2214539\obj\Debug\net6.0\AnimalFarm.pdb
+C:\Users\zacks\Desktop\School\CIS162AD (C#)\Lesson7\Lesson7_ZAC2214539\obj\Debug\net6.0\AnimalFarm.genruntimeconfig.cache
+C:\Users\zacks\Desktop\School\CIS162AD (C#)\Lesson7\Lesson7_ZAC2214539\obj\Debug\net6.0\ref\AnimalFarm.dll
