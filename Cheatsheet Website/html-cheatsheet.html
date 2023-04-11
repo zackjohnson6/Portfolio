@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta author="Zack Johnson">
+    <meta keywords="HTML, properties, cheatsheet, tags, elements">
+    <meta description="A page containing cheatsheet materials for HTML content">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Cheatsheet</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fredoka&family=Lato&family=Source+Code+Pro&display=swap');
+        </style>
+</head>
+<body>
+    <section class="left-column"> 
+        <h1>HTML Cheatsheet</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <div class="dropdownmenu">
+            <span><h3>Cheatsheets</h3></span>
+            <div class="dropdownlinks">
+            
+            <a href="html-cheatsheet.html">HTML Cheatsheet</a>
+            <a href="flexbox-cheatsheet.html">Flexbox Cheatsheet</a>
+            <a href="ui-properties.html">UI Properties Cheatsheet</a>
+            <a href="queries-cheatsheet.html">Queries Cheatsheet</a>
+            <a href="ARIA-cheatsheet.html">ARIA Cheatsheet</a>
+            <a href="transformation-cheatsheet.html">Transformations Cheatsheet</a>
+        
+        </div>
+        </div>
+        <div class="dropdownmenu">
+            <span><h3>Web Patterns</h3></span>
+            <div class="dropdownlinks">
+            <a href="menus.html">Menus</a>
+            <a href="widgets.html">Widgets</a>
+            <a href="media.html">Media</a>
+            <a href="cards.html">Cards</a>
+    
+            </div>
+        </div>
+        </nav>
+        <footer><span>Developed by: Zack Johnson | Github: zackjohnson6 <br><small>5/14/22</small><br><small>CIS233DA | Section 12988</small></span>
+        
+        </footer>  
+    </section>
+
+    <main>
+
+        <section class="container">
+        <div>
+        <h2>Head Tags</h2>
+        <h5>All Tags should be assumed to be enclosed with < >, and have opening and closing tags</h5>
+        <dl>
+        
+        <div class="property-group">
+            <dt>title</dt>
+            <dd><code> <span>/* creates the title of the webpage  */</span></code></dd>
+            </div>
+        
+        <div class="property-group">
+            <dt>meta</dt>
+            <dd><code> <span>/* tag that allows for the creation of metadata for the page */</span></code></dd>
+            </div>
+        
+        <div class="property-group">
+            <dt>link</dt>
+            <dd><code> <span>/* tag that allows for links to external stylesheets, etc. to be placed into the webpage */</span></code></dd>
+            </div>
+        
+        <div class="property-group">
+            <dt>style</dt>
+            <dd><code> <span>/* tag that allows for import or linking of certain style items, such as external fonts */</span></code></dd>
+            </div>
+        </dl>
+        </div>
+        
+        <div>
+        <h2>Sectioning Elements</h2>
+        <h5>All Tags should be assumed to be enclosed with < >, and have opening and closing tags</h5>
+        <dl>
+        <div class="property-group">
+            <dt>DTD</dt>
+            <dd><code> <span>/* Document Type Definition. Defines what type of document the page will be; html, css, js, etc. */</span></code></dd>
+             </div> 
+        
+        <div class="property-group">
+            <dt>HTML</dt>
+            <dd><code> <span>/* Further establishes the document as an html page. Absolutely necessary for all HTML pages for start tag to be at the very top, and the end tag to be the last item on a document */</span></code></dd>
+             </div>
+        
+        <div class="property-group">
+            <dt>head</dt>
+            <dd><code> <span>/* creates the head section of the html page */</span></code></dd>
+            </div>
+        
+        <div class="property-group">
+            <dt>NAV</dt>
+            <dd><code> <span>/* The navigation section. Navigation links between pages on the website are placed here. */</span></code></dd>
+             </div>  
+        
+        
+        <div class="property-group">
+            <dt>header</dt>
+            <dd><code><span>/* creates the header section. Generally this is area at the top of the page where the main page title and navigation area can be found */</span></code></dd>
+            </div>
+        
+        <div class="property-group">
+            <dt>body</dt>
+            <dd><code> <span>/* creates the body of the document. This is where the vast majority of the page's content will go */</span></code></dd>
+             </div>   
+        
+        <div class="property-group">
+            <dt>section</dt>
+            <dd><code> <span>/* denotes a specific area within the body, which can allow for different styling and specific content to be applied to it. */</span></code></dd>
+             </div>  
+        
+        <div class="property-group">
+            <dt>article</dt>
+            <dd><code> <span>/* creates a section of self-contained content; an area that can be unrelated to the rest of the body */</span></code></dd>
+             </div>
+        
+        <div class="property-group">
+            <dt>aside</dt>
+            <dd><code> <span>/* A section of the body that has content that is related to the rest of the page, but is stand alone on the document */</span></code></dd>
+             </div>  
+        
+        
+        <div class="property-group">
+            <dt>footer</dt>
+            <dd><code> <span>/* generally at the bottom of a webpage, this area can contain links, contact information, logos, and other miscellaneous information */</span></code></dd>
+             </div>
+             
+        <div class="property-group">
+            <dt>h1-h6</dt>
+            <dd><code> <span>/* heading tags. These tags create headings of various sizes to delineate different areas of a document, with h1 being the largest down to the smallest, h6. */</span></code></dd>
+             </div>     
+        </dl>
+        
+        <h2>Grouping Elements</h2>
+        <h5>All Tags should be assumed to be enclosed with < >, and have opening and closing tags</h5>
+        <dl>
+        
+        <div class="property-group">
+            <dt>div</dt>
+            <dd><code> div class="" <span>/* creates a container (class) of html elements that can be styled separately from other parts of the document */</span></code></dd>
+             </div>
+        
+        <div class="property-group">
+            <dt>main</dt>
+            <dd><code> <span>/* Used to define the content that should be the focal point of the page. */</span></code></dd>
+             </div>
+        
+        <div class="property-group">
+            <dt>p</dt>
+            <dd><code> <span>/* paragraph tag. Creates paragraphs of text within the body of the document */</span></code></dd>
+            </div>
+        
+        <div class="property-group">
+            <dt>ol</dt>
+            <dd><code> <span>/* Ordered List tag. Creates a list element that is in an ordered, such as a numbered list. Includes an 'li' child tag for its list items. */</span></code></dd>
+            </div>
+        
+        <div class="property-group">
+            <dt>ul</dt>
+            <dd><code> <span>/* Unordered list tag. Creates a list element that does not have an order, and is usually displayed with bullet points. Includes an 'li' child tag for its list items. */</span></code></dd>
+            </div>
+        
+        <div class="property-group">
+            <dt>dl</dt>
+            <dd><code> <span>/* A description list tag. Used to create a list that can have different terms and their definitions included. Uses 'dt' and 'dd' tags for the defined term and the definition, respectively. */</span></code></dd>
+            </div>
+        
+        </dl>
+        
+        <div>
+        <h2>Text Elements</h2>
+        <h5>All Tags should be assumed to be enclosed with < >, and have opening and closing tags</h5>
+        <dl>
+        <div class="property-group">
+            <dt>a</dt>
+            <dd><code> href="" <span>/* creates a hyperlink to a specified webpage, image, etc.  */</span></code></dd>
+        
+            </div>
+        
+        <div class="property-group">
+            <dt>strong</dt>
+            <dd><code> <span>/* gives a particular word, sentence, or paragraph a larger, bolder appearance to denote importance */</span></code></dd>
+            </div>
+        
+        <div class="property-group">
+            <dt>small</dt>
+            <dd><code> <span>/* Makes a particular word, sentence, or paragraph smaller in appearance.  */</span></code></dd>
+            </div>
+        
+        <div class="property-group">
+            <dt>span</dt>
+            <dd><code> <span>/* Allows for the adjustment of styling to a certain area within a paragraph */</span></code></dd>
+            </div>
+        
+        <div class="property-group">
+            <dt>code</dt>
+            <dd><code> <span>/* allows for code to be placed within the text without it being applied to the html structure of the document; code can be visualized */</span></code></dd>
+            </div>
+        
+        <div class="property-group">
+            <dt>bold</dt>
+            <dd><code> <span>/* bolds specific text areas */</span></code></dd>
+            </div>
+        
+        
+        </dl>
+        </div>
+        
+        <div>
+        <h2>Table Elements</h2>
+        <h5>All Tags should be assumed to be enclosed with < >, and have opening and closing tags</h5>
+        <dl>
+        
+        <div class="property-group">
+            <dt>table</dt>
+            <dd><code> <span>/* creates a table within a document */</span></code></dd>
+            </div>
+        
+        <div class="property-group">
+            <dt>tr</dt>
+            <dd><code> <span>/* creates rows within a table element */</span></code></dd>
+            </div>
+        
+        <div class="property-group">
+            <dt>th</dt>
+            <dd><code> <span>/* creates header cells within the table; labels the columns and rows */</span></code></dd>
+            </div>
+        
+        <div class="property-group">
+            <dt>td</dt>
+            <dd><code> <span>/* creates the data cells within the table */</span></code></dd>
+            </div>
+        </dl>
+        </div>
+        
+        <div>
+        <h2>Form Elements</h2>
+        <h5>All Tags should be assumed to be enclosed with < >, and have opening and closing tags</h5>
+        <dl>
+        
+        <div class="property-group">
+            <dt>form</dt>
+            <dd><code> <span>/* creates a form on the webpage */</span></code></dd>
+            </div>
+            
+        <div class="property-group">
+            <dt>label</dt>
+            <dd><code> <span>/* Used to identify the field within the form, e.g. first name, last name, email address, etc. */</span></code></dd>
+            </div>
+        
+        <div class="property-group">
+            <dt>input</dt>
+            <dd><code> <span>/* Allows you to denote a specific type of field within a form, rather than just using paragraph text, e.g. email address field. */</span></code></dd>
+            </div>
+        
+        <div class="property-group">
+            <dt>button</dt>
+            <dd><code> <span>/* Creates a button on the webpage. Different types of buttons can be made by using the 'type' attribute. */</span></code></dd>
+            </div>
+        
+        <div class="property-group">
+            <dt>Text Area</dt>
+            <dd><code> <span>/* Creates a field that allows a user to write multiple lines of text within the field; generally used on a contact form for a user to write their message.  */</span></code></dd>
+            </div>
+        
+        </dl>    
+        </div>
+        
+        </div>
+        
+        
+        </section>
+        
+        
+        </main>
+
+</body>
+</html>

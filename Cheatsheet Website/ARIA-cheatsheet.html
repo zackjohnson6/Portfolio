@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta author="Zack Johnson">
+    <meta keywords="ARIA, accessibility, roles, states, properties">
+    <meta description="a cheatsheet containing information about ARIA roles, states, and properties">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARIA Cheatsheet</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fredoka&family=Lato&family=Source+Code+Pro&display=swap');
+        </style>
+</head>
+<body>
+    <section class="left-column"> 
+        <h1>ARIA Cheatsheet</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <div class="dropdownmenu">
+            <span><h3>Cheatsheets</h3></span>
+            <div class="dropdownlinks">
+            
+            <a href="html-cheatsheet.html">HTML Cheatsheet</a>
+            <a href="flexbox-cheatsheet.html">Flexbox Cheatsheet</a>
+            <a href="ui-properties.html">UI Properties Cheatsheet</a>
+            <a href="queries-cheatsheet.html">Queries Cheatsheet</a>
+            <a href="ARIA-cheatsheet.html">ARIA Cheatsheet</a>
+            <a href="transformation-cheatsheet.html">Transformations Cheatsheet</a>
+        
+        </div>
+        </div>
+       
+        <div class="dropdownmenu">
+            <span><h3>Web Patterns</h3></span>
+            <div class="dropdownlinks">
+            <a href="menus.html">Menus</a>
+            <a href="widgets.html">Widgets</a>
+            <a href="media.html">Media</a>
+            <a href="cards.html">Cards</a>
+    
+            </div>
+        </div>
+        </nav>
+        <footer><span>Developed by: Zack Johnson | Github: zackjohnson6 <br><small>5/14/22</small><br><small>CIS233DA | Section 12988</small></span>
+        
+        </footer>  
+    </section>
+<main>
+    <section class="container">
+        <div>
+        <h2>ARIA Roles</h2>
+        <dl>
+        <div class="property-group">
+        <dt>Abstract Roles</dt>
+        <dd>These roles are only used by browsers, and should not be used by developers when creating HTML pages</dd>
+        </div>
+        
+        
+        <div class="property-group">
+            <dt>Document Structure Roles</dt>
+            <dd>These roles help to define a structural description of a particular content section. These roles are generally not interactive, and should only be used if a normal HTML tag is not available to be used in its place. Examples include: <code>toolbar</code> and <code>tooltip</code></dd>
+            </div>
+        
+        <div class="property-group">
+            <dt>Landmark Roles</dt>
+            <dd>These are roles that identify content areas on a webpage. They assist with webpage navigation by defining major content areas, such as the main content, navigation links, and search functions. Examples include: <code>navigation</code> and <code>footer</code></dd>
+            </div>
+            
+        <div class="property-group">
+            <dt>Live Region Roles</dt>
+            <dd>Live region roles are used to notify assistive technology of dynamic changes to a webpage and its content. This allows the technology to announce the changes to the user as the content changes. Examples include: <code>alert</code> and <code>alertdialog</code></dd>
+            </div>
+        
+        <div class="property-group">
+            <dt>Widget Roles</dt>
+            <dd>Widget roles are used to define and describe interactive features within a webpage, such as: <code>tab</code> and <code>tablist</code></dd>
+            </div>
+        
+        <div class="property-group">
+            <dt>Window Roles</dt>
+            <dd>These roles are used when a sub-window will be created after interacting with part of a webpage. It will allow assistive technology to convey the sub-window content, with a common example being an alert message. Examples include: <code>alertdialog</code> and <code>dialog</code></dd>
+            </div>
+        
+        </dl>
+        
+        <h2>ARIA Properties</h2>
+        <dl>
+        <div class="property-group">
+            <dt>Widget Attributes</dt>
+            <dd>These properties give information regarding user input elements. Examples are: <code>aria-autocomplete</code> <code>aria-errormessage</code><code>aria-keyshortcuts</code> </dd>
+             </div>
+
+             <div class="property-group">
+                <dt>Live Region Attributes</dt>
+                <dd>These are properties that will update within specific regions of a page as the page is being viewed. Examples: <code>aria-atomic</code><code>aria-live</code><code>aria-relevant</code></dd>
+                 </div>     
+                 
+                 <div class="property-group">
+                    <dt>Drag-and-Drop Attributes</dt>
+                    <dd>These properties pertain specifically to Drag-and-Drop input elements. Examples include: <code>aria-dropeffect</code></dd>
+                     </div>
+
+                     <div class="property-group">
+                        <dt>Relationship Attributes</dt>
+                        <dd>These properties give information about an element's relationship to another element. Examples: <code>aria-controls</code> <code>aria-describedby</code> <code>aria-details</code></dd>
+                         </div>    
+
+
+                </dl>
+        
+        <h2>ARIA States</h2>
+        <dl>
+        <div class="property-group">
+            <dt>Widget Attributes</dt>
+            <dd>These are states that give information regarding user input elements. Example: <code>aria-checked</code></dd>
+         </div>   
+        
+        <div class="property-group">
+            <dt>Live Region Attributes</dt>
+            <dd>States of specific page regions that update while the page is being viewed. Example: <code>aria-busy</code></dd>
+         </div>  
+        
+         <div class="property-group">
+            <dt>Drag-and-Drop Attributes</dt>
+            <dd>States of drag-and-drop elements. Example: <code>aria-grabbed</code></dd>
+         </div>  
+         
+        
+        </dl>
+        
+        </div>
+        
+        
+        
+        </section>
+        
+        
+        </main>
+
+    
+</body>
+</html>

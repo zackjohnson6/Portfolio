@@ -1,0 +1,440 @@
+:root{
+    --main-color-100: hsl(50, 25%, 90%);
+    --main-color-400: hsl(50, 35%, 50%);
+    --main-color-800: hsl(50, 25%, 15%);
+    --main-color-200: hsl(50, 45%, 85%);
+    --main-color-600: hsl(50, 35%, 75%);
+    --accent-color-200: hsl(190, 35%, 90%);
+    --accent-color-400: hsl(190, 40%, 50%);
+    --accent-color-600: hsl(190, 40%, 30%);
+    --accent-color-800: hsl(190, 25%, 15%);
+    --font-body: "Fredoka", sans-serif;
+    --font-headings:"Roboto", sans-serif;
+    --font-code:"Source Code Pro", monospace;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+      
+    }
+
+    
+/* nav stylings */
+nav{
+    text-align: center;
+}
+
+.dropdownmenu span{
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: darkblue;}
+    
+    .dropdownmenu{
+    display: block;
+    position: relative;
+    }
+    
+    .dropdownlinks a{
+    display:block;
+    padding: 8px;
+    text-align: left;
+   
+    }
+    
+    .dropdownlinks{
+    background-color: lightgray;
+    ;border: thin solid darkblue;
+    display: none;
+    
+    }
+
+    .dropdownmenu:hover .dropdownlinks{display:block} 
+    
+    .left-column nav{
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        color: blueviolet;
+        padding: 10px;
+          }
+nav a:hover{
+background: linear-gradient(blue, pink);}    
+
+/*main stylings */
+code{
+      font-family: var(--font-code);
+      color: red; 
+    }
+    
+    body{
+      font-family: var(--font-body);
+      color: var(--main-color-800);
+      background: linear-gradient(hsl(218, 50%, 95%), hsl(218, 60%, 45%)) ;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      gap: 1em;
+      overflow: hidden; 
+    }
+    
+    h1, h2, h3, h4, h5, h6{
+        font-family: var(--font-headings);
+    }
+    main{
+    height: 100vh;
+    width: 100vw;
+    padding-right: 1em;
+    overflow: auto;
+    }
+    
+    main h2, h3{
+    padding-top: 10px;
+    padding-bottom: 10px;  
+    }
+    
+    
+    span{color: var(--main-color-800);
+        text-align: center;  
+    }
+    
+    .left-column{
+      background-color: var(--main-color-400);
+    height: 100vh;
+    display: flex;
+    flex-shrink: 0;
+    flex-grow: 0;
+    flex-basis: 250px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    border-right: thick solid black;
+    box-shadow: lightsteelblue 10px 10px 5px;
+    padding-left: 5px;  
+    }
+    
+    .left-column h1{
+    font-size: 1.3em;  
+    }
+    
+
+    
+
+    
+    footer{
+    height: 5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;  
+    }
+  
+    
+ /* Property group stylings */   
+    .property-group, .term-group{
+    display: flex;
+    flex-direction: row;
+    border-top: thin solid black; 
+    padding: 20px;
+    background-color: var(--main-color-200);
+    box-shadow: lightsteelblue 10px 10px 5px;
+    }
+    
+    .container{
+    display: flex;
+    gap: 1em;  
+    }
+    
+    .container div{
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;  
+    }
+    
+    dt{
+    border-right: thin solid black;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 10ex;
+    font-weight: bolder;
+    padding-right: 5px;   
+    }
+    
+    dd{
+    display: flex;
+    flex-direction: column;
+    padding-left: 5px;  
+    }
+
+/* Transformations and styling */
+.transition{
+    display: grid;
+    grid-column-start: 2;    
+    }
+    
+    .list{
+    background-color: var(--main-color-200);    
+    display: block;
+    border: solid black;
+    margin: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;    
+    }
+    
+    dt{
+    text-align: center;    
+    background-color: var(--main-color-200);    
+    font-weight: bold;    
+    margin: 10px;   
+    }
+        
+    dd{
+    text-align: center;    
+    background-color: var(--main-color-200);     
+        }
+    
+    
+    
+    .example-code-card{
+    display: block;    
+    border: solid black;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 20px;
+    background-color: var(--main-color-200);
+    box-shadow: grey 10px 10px 5px;
+    margin: 20px;   
+    }
+    
+    .example-code-card p{
+    border-bottom: thin solid black;
+    text-align: center;    
+    }
+    
+    .example-code-card h3{
+    text-align: center;    
+    }
+    
+    
+    .previewtranslate {
+        height: 150px;
+        width: 150px;
+        background: red;
+        transform: translate(500px, 5px) }
+    
+    
+    .previewscale {
+        height: 150px;
+        width: 150px;
+        background: red;
+        transform: scale(1.05, .75) }
+    
+    .previewrotate{
+    height: 75px;
+    width: 75px;
+    margin-top: 50px;
+    margin-left: 250px;
+    background: red;
+    transform: rotate(-38deg);
+    
+    }
+    
+    .previewskew{
+        height: 75px;
+        width: 75px;
+        margin-top: 15px;
+        margin-left: 25px;
+        background: red;
+    transform: skew(20deg, 10deg); 
+    
+    }
+    
+    .previewmatrix {
+    height: 150px;
+    width: 150px;
+    background:red;
+    transform: matrix(1, 0.2, 1, 0, 0, 1);
+    margin-left: 70px;
+    }
+    
+    .previewtransition{
+        height: 150px;
+        width: 150px;
+        background: red; 
+        transition: width 3s   
+    }
+    
+    .previewtransition:hover{ width: 300px;
+    }
+    
+    .previewdelay{
+    height: 150px;
+    width: 150px;
+    background: red;
+    transition-property: width;
+    transition-duration: 5s;
+    transition-delay: 2s;    
+    }
+    
+    .previewdelay:hover{
+    width: 500px;    
+    }
+    
+    .previewduration{
+        height: 150px;
+        width: 150px;
+        background: red;
+        transition-property: width;
+        transition-duration: 5s;     
+    }
+    
+    .previewduration:hover{
+    width: 500px;    
+    }
+    
+    .previewtiming{ 
+        height: 150px;
+        width: 150px;
+        background: red;
+        transition: width 5s;
+        transition-timing-function: ease}
+    
+    .previewtiming:hover{
+    width: 500px;
+    }
+    
+    .previewkeyframe{
+        height: 150px;
+        width: 150px;
+        background: red;
+        position: relative;
+        animation-name: slide;
+        animation-duration: 4s; 
+    }
+    
+    @keyframes slide{
+        from {left: 0px;}
+        to {left: 350px;}    
+    }
+    
+    .previewAniName{
+        height: 150px;
+        width: 150px;
+        background: red;
+        position: relative;
+        animation-name: slip;
+        animation-duration: 7s;    
+        }
+    
+    @keyframes slip{
+    from {left: 0px;}
+    to {left: 500px;}
+        }
+    
+    .previewduration{
+        height: 150px;
+        width: 150px;
+        background: red;
+        position: relative;
+        animation-name: glide;
+        animation-duration: 2s;    
+    }
+    
+    @keyframes glide {
+        from {left: 0px}    
+        to {left: 800px}    
+    }
+    
+    .previewaniTiming{
+        height: 150px;
+            width: 150px;
+            background: red;
+            position: relative;
+            animation-name: move;
+            animation-duration: 6s;
+            animation-timing-function: ease    
+    }
+    
+    @keyframes move{
+        from {left: 0px}   
+        to {left: 450px}
+       }
+    
+    .previewaniDelay{
+        height: 150px;
+        width: 150px;
+        background: red;
+        position: relative;
+        animation-name: run;
+        animation-duration: 6s;
+        animation-delay: 2s;    
+    }
+    
+    @keyframes run{
+        from {left: 0px}   
+        to {left: 450px}   
+    }
+    
+    .previewiteration{
+        height: 150px;
+        width: 150px;
+        background: red;
+        position: relative;
+        animation-name: go;
+        animation-duration: 6s;
+        animation-iteration-count: 3;    
+    }
+    
+    @keyframes go{
+        from {left: 0px}   
+        to {left: 450px}   
+    }
+    
+    .previewdirection{
+        width: 50px;
+        height: 50px;
+        background: red;
+        position: relative;
+        animation: myMove 5s;
+        animation-iteration-count: infinite;
+        animation-direction: normal;    
+    }
+    
+    @keyframes myMove{
+        0% {left: 0px; top: 0px;}
+        25% {left: 200px; top: 0px;}
+        50% {left: 200px; top: 20px;}
+        75% {left: 0px; top: 20px} 
+        100% {left: 0px; top: 0px}    
+    }
+    
+    .previewfill{
+        width: 150px;
+        height: 150px;
+        background: red;
+        position: relative;
+        animation: theMove 5s;
+        animation-fill-mode: forwards;    
+    }
+    
+    @keyframes theMove{
+        from {left: 0px} 
+            to {left: 500px; background-color: purple;}
+    }
+    
+    .previewplay{
+        width: 150px;
+        height: 150px;
+        background: red;
+        position: relative;
+        animation: noMove 5s;
+        animation-play-state: paused;    
+    }
+    
+    @keyframes noMove{
+        0% {left: 0px; top: 0px;}
+        25% {left: 200px; top: 0px;}
+        50% {left: 200px; top: 20px;}
+        75% {left: 0px; top: 20px} 
+        100% {left: 0px; top: 0px}   
+    }

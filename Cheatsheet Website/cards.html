@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta author="Zack Johnson">
+    <meta keywords="Cards, CTA, button, article, product">
+    <meta description="cards, lots of cards">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fredoka&family=Lato&family=Source+Code+Pro&display=swap');
+        </style>
+    <title>Cards</title>
+</head>
+<body>
+    <section class="left-column"> 
+        <h1>Media Cheatsheet</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <div class="dropdownmenu">
+            <span><h3>Cheatsheets</h3></span>
+            <div class="dropdownlinks">
+            
+            <a href="html-cheatsheet.html">HTML Cheatsheet</a>
+            <a href="flexbox-cheatsheet.html">Flexbox Cheatsheet</a>
+            <a href="ui-properties.html">UI Properties Cheatsheet</a>
+            <a href="queries-cheatsheet.html">Queries Cheatsheet</a>
+            <a href="ARIA-cheatsheet.html">ARIA Cheatsheet</a>
+            <a href="transformation-cheatsheet.html">Transformations Cheatsheet</a>
+        
+        </div>
+        </div>
+       
+        <div class="dropdownmenu">
+            <span><h3>Web Patterns</h3></span>
+            <div class="dropdownlinks">
+            <a href="menus.html">Menus</a>
+            <a href="widgets.html">Widgets</a>
+            <a href="media.html">Media</a>
+            <a href="cards.html">Cards</a>
+    
+            </div>
+        </div>
+        </nav>
+        <footer>
+        <span>Developed by: Zack Johnson | Github: zackjohnson6 <br><small>5/14/22</small><br><small>CIS233DA | Section 12988</small></span>
+        
+        </footer>  
+    </section>
+    
+    <main>
+
+        <section class="container">
+        <div>
+        <dl>
+        
+        <div class="property-group">
+            <dt>Article Card with Read More CTA</dt>
+            <dd>
+                <div class="article">
+                <div class="contain">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis maxime eos omnis dolores enim deserunt laudantium eligendi delectus doloremque praesentium ex aperiam inventore optio impedit, ipsam debitis esse ad possimus.</p>
+                    <button id="artbutton" type="button">Read More</button>
+                </div>
+                </div>
+                <p><small>HTML: <code>
+
+                    &lt;div class="article"&gt;
+                    &lt;div class="contain"&gt;
+                    &lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis maxime eos omnis dolores enim deserunt laudantium eligendi delectus doloremque praesentium ex aperiam inventore optio impedit, ipsam debitis esse ad possimus.&lt;/p&gt;
+                    &lt;button id="artbutton" type="button"&gt;Read More&lt;/button&gt;
+                    &lt;/div&gt;
+                    &lt;/div&gt;
+
+
+                </code></small></p>
+
+                <p><small>CSS: <code>.article{
+                    box-shadow: 10px 10px 15px 10px grey;
+                    border-radius: 5px;
+                    width: 150px;
+                    }
+                  
+                  .contain p{
+                  padding: 3px;
+                  display: block;
+                  font-size: 16px;
+                  }
+                  
+                  #artbutton{
+                    background: darkblue;
+                    border: 2px solid darkblue;
+                    color: white;
+                    font-size: 10px;
+                    padding: 10px;
+                    text-transform: uppercase;
+                    align-self: start;
+                  }</code></small></p>
+                
+            </dd>
+            </div>
+        
+        <div class="property-group">
+            <dt>Product Card</dt>
+            <dd>
+                <div class="cd">
+                    <img src="images/cd.jpg" alt="rick astley CD">
+                    <div class="product">
+                        <h4>Buy Rick Astley's New CD here!</h4>
+                        <p>$12.99</p>
+
+                        <button id="disc">Add to Cart</button>
+                    </div>
+                </div>
+                <br>
+                <p><small>HTML: <code>
+
+                    &lt;div class="cd"&gt;
+                    &lt;img src="images/cd.jpg" alt="rick astley CD"&gt;
+                    &lt;div class="product"&gt;
+                    &lt;h4&gt;Buy Rick Astley's New CD here!&lt;/h4&gt;
+                    &lt;p&gt;$12.99&lt;/p&gt;
+    
+                    &lt;button id="disc"&gt;Add to Cart&lt;/button&gt;
+                    &lt;/div&gt;
+
+                </code></small></p>
+
+                <p><small>CSS: <code> 
+                    .cd{
+                        box-shadow: 10px 10px 15px 10px grey;
+                        border-radius: 5px;
+                        width: 38.7%;
+                      }
+                      
+                      .cd h4, .cd p{
+                        text-align: center;
+                      }
+                      
+                      .product{
+                        padding: 5px;
+                      }
+                      
+                      #disc{
+                        float: right;
+                        padding: 5px;
+                        margin-bottom: 2px;
+                      }
+                </code></small></p>
+            </dd>
+            </div>
+        
+        <div class="property-group">
+            <dt>Profile Card</dt>
+            <dd>
+                <div class="profile">
+                    <img src="images/admin_avatar.png" alt="avatar" width="230px" height="200px">
+                    <div class="admin">
+                        <h4><b>Jordan Smith</b></h4>
+                  <p>- CTO</p>
+                  <p>- Alma Mater: Brown</p>
+                  <p>- Master's in Computer Science</p>
+                    </div>
+                </div>
+            
+            <p><small>HTML:<code>
+                &lt;div class="profile"&gt;
+                &lt;img src="images/admin_avatar.png" alt="avatar" width="230px" height="200px"&gt
+                &lt;div class="admin"&gt
+                &lt;h4&gt&lt;b&gtJordan Smith&lt;/b&gt&lt;/h4&gt
+                &lt;p&gt- CTO&lt;/p&gt
+                &lt;p&gt- Alma Mater: Brown&lt;/p&gt
+                &lt;p&gt- Master's in Computer Science&lt;/p&gt
+                &lt;/div&gt
+                &lt;/div&gt
+            </code></small></p>
+
+            <p><small>CSS: <code>.profile{
+                box-shadow: 10px 10px 15px 10px grey;
+                width: 27.4%;
+              }
+              
+              
+              
+              .admin{
+                padding: 4px;
+              }</code></small></p>
+            
+            </dd>
+            </div>
+        
+
+        </dl>
+        </div>
+        </section>
+    </main>
+
+
+</body>
+</html>

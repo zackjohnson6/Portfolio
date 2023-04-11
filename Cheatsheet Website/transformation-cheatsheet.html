@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta author="Zack Johnson">
+    <meta keywords="transformations, transitions, animations">
+    <meta description="cheatsheet about CSS transformations, transitions, and animations">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformations Cheatsheet</title>
+
+    <link rel="stylesheet" href="trans.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fredoka&family=Lato&family=Source+Code+Pro&display=swap');
+        </style>
+</head>
+<body>
+    <section class="left-column"> 
+        <h1>Transformations Cheatsheet</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <div class="dropdownmenu">
+            <span><h3>Cheatsheets</h3></span>
+            <div class="dropdownlinks">
+            
+            <a href="html-cheatsheet.html">HTML Cheatsheet</a>
+            <a href="flexbox-cheatsheet.html">Flexbox Cheatsheet</a>
+            <a href="ui-properties.html">UI Properties Cheatsheet</a>
+            <a href="queries-cheatsheet.html">Queries Cheatsheet</a>
+            <a href="ARIA-cheatsheet.html">ARIA Cheatsheet</a>
+            <a href="transformation-cheatsheet.html">Transformations Cheatsheet</a>
+        
+        </div>
+        </div>
+        <div class="dropdownmenu">
+            <span><h3>Web Patterns</h3></span>
+            <div class="dropdownlinks">
+            <a href="menus.html">Menus</a>
+            <a href="widgets.html">Widgets</a>
+            <a href="media.html">Media</a>
+            <a href="cards.html">Cards</a>
+    
+            </div>
+        </div>
+        </nav>
+        <footer><span>Developed by: Zack Johnson | Github: zackjohnson6 <br><small>5/14/22</small><br><small>CIS233DA | Section 12988</small></span>
+        
+        </footer>  
+    </section>
+    
+    <main>
+
+        <section class="term">
+        <h2 id="terms">Terminology</h2>    
+        <dl>
+        
+        <div class="list">    
+        <dt>Animations</dt>
+        <dd>A CSS property that allows you to gradually change the styling of an element from one to another. Also allows for movements properties to be applied to an element</dd>
+        </div>
+        
+        <div class="list">
+        <dt>Keyframes</dt>
+        <dd>The @keyframes rule identifies the animation, and allows for the creation of the animation properties</dd>
+        </div>
+        
+        <div class="list">
+        <dt>Transforms</dt>
+        <dd>This property allows you to rotate, move, scale, etc. an element</dd>
+        </div>
+        
+        <div class="list">
+        <dt>Transitions</dt>
+        <dd>Allows for the stylings of elements to be changed based on a user's interactions or overall page style. Transitions can happen gradually or instantaneously</dd>
+        </div>
+        
+        <div class="list">
+        <dt>Easing</dt>
+        <dd>A CSS function that determines the rate at which an element will be changed, either through transitions or animations</dd>
+        </div>
+        
+        <div class="list">
+        <dt>Rotation</dt>
+        <dd>A transform property value that allows for the turning of an element along an x, y, or z axis, or all or some of the axes together</dd>
+        </div>
+        
+        <div class="list">
+        <dt>Scale</dt>
+        <dd>A transform property that allows for the increase or decrease in the size of an element</dd>
+        </div>
+        
+        <div class="list">
+        <dt>Skew</dt>
+        <dd>A transform property that allows for an element to be "turned" on the x or y axis</dd>
+        </div>
+        
+        <div class="list">
+        <dt>Delay</dt>
+        <dd>A transition property that determines when a transition will begin</dd>
+        </div>
+        
+        <div class="list">
+        <dt>Transition Timing</dt>
+        <dd>A transition property that allows for a transition effect to change its speed over the course of the transition</dd>
+        </div>
+        </dl>
+        </section>
+        
+        <section>
+        <h2 id="transform">Transform Properties</h2>    
+        
+        <div class="example-code-card">
+        <h3>transform: translate</h3>    
+        <p>This moves an element from it's current or default position to another on the x and y axis</p>
+        <code>.translate {
+            height: 150px;
+            width: 150px;
+            background: red;
+            transform: translate(500px, 5px) }</code>
+        <div class="previewtranslate">
+        </div>
+        </div>
+        
+        <div class="example-code-card">
+            <h3>transform: scale</h3>    
+            <p>This increases or decreases the size of the image based on width and length</p>
+            <code>.scale {
+                height: 150px;
+                width: 150px;
+                background: red;
+                transform: scale(1.05, .75)}</code>
+            <div class="previewscale">
+            </div>
+            </div>
+        
+        
+        <div class="example-code-card">
+            <h3>transform: rotate</h3>    
+            <p>Turns the image clockwise or counter-clockwise based on a given degree</p>
+            <code>.rotate {
+                height: 75px;
+                width: 75px;
+                background: red;
+                transform: rotate(-38deg)}</code>
+            <div class="previewrotate">   
+            </div>
+            </div>
+        
+        <div class="example-code-card">
+            <h3>transform: skew</h3>    
+            <p>Stretches the image along the x/y axes, determined by given angles</p>
+            <code>.skew {
+                height: 75px;
+                width: 75px;
+                margin-top: 15px;
+                margin-left: 25px;
+                background: red;
+            transform: skew(20deg, 10deg)}</code>
+            <div class="previewskew">  
+            </div>
+            </div>
+        
+        <div class="example-code-card">
+        <h3>transform: matrix</h3>    
+        <p>This function will allow you to skew, scale, rotate, and translate all at once by placing the values within a matrix in the declaration block</p>
+        <code>.matrix{
+            height: 150px;
+            width: 150px;
+            background:red;
+            transform: matrix(1, 0.2, 1, 0, 0, 1)  }</code>
+        <div class="previewmatrix"> 
+        </div>
+        </div>
+        
+        
+        </section>
+        
+        <section>
+        <h2 id="transition">Transition Properties</h2>    
+        
+        <div class="example-code-card">
+        <h3>transition</h3>    
+        <p>Catch-all property where you can set all 4 transition properties into one: transition-delay, transition-duration, transition-property, and transition-timing-function</p>
+        <code>
+            .transition{
+                height: 150px;
+            width: 150px;
+            background: red; 
+            transition: width 3s 
+            }
+            .transition:hover{
+            width: 300px;    
+            }</code> <br><br>
+        <div class="previewtransition">
+        </div>
+        </div>
+        
+        <div class="example-code-card">
+            <h3>transition-delay</h3>    
+            <p>Determines when desired transition effect will start</p>
+            <code>
+                .transition-delay{
+                    height: 150px;
+                    width: 150px;
+                    background: red;
+                    transition-property: width;
+                    transition-duration: 5s;
+                    transition-delay: 2s;      
+                }
+                
+                .transition-delay:hover{
+                width: 500px;    
+                }
+                </code> <br><br>
+            <div class="previewdelay">
+            </div>
+            </div>
+        
+        <div class="example-code-card">
+            <h3>transition-duration</h3>    
+            <p>Determines how long the transition effect will take to complete</p>
+            <code>
+                .transition-duration{
+                    height: 150px;
+                    width: 150px;
+                    background: red;
+                    transition-property: width;
+                    transition-duration: 5s;      
+                }
+                
+                .transition-duration:hover{
+                width: 500px;    
+                }
+                </code> <br><br>
+            <div class="previewduration">
+            </div>
+            </div>
+        
+        <div class="example-code-card">
+            <h3>transition-timing-function</h3>    
+            <p>Determines the speed curve of the transition effect, and allows the effect to change speeds over the course of the transition</p>
+            <code>
+                .transition-timing{
+                    height: 150px;
+                    width: 150px;
+                    background: red;
+                    transition: width 3s;
+                    transition-timing-function: ease
+                    }
+                
+                .transition-timing:hover{
+                width: 500px;    
+                }
+                </code> <br><br>
+            <div class="previewtiming">
+            </div>
+            </div>
+        
+        </section>
+        
+        <section>
+        <h2 id="animation">Animation Properties</h2>    
+        
+        <div class="example-code-card">
+            <h3>@keyframe rule</h3>    
+            <p>There are 3 keyframe selectors: 
+            <ul>
+            <li>animationname: defines the name of the animation</li>
+            <li>from: determines where the animation will start</li>
+            <li>to: determines where the animation will end</li>    
+            </ul>
+            Refresh the page to see the animation
+            </p>
+            <code>.keyframe{
+            height: 150px;
+            width: 150px;
+            background: red;
+            animation-name: slide;
+            animation-duration: 4s;    
+            }
+        
+            @keyframes slide{
+            from {left: 0px;}
+            to {left: 350px;}    
+            }</code> <br><br>
+            <div class="previewkeyframe">
+            </div>
+            </div>
+        
+        
+        <div class="example-code-card">
+            <h3>animation-name</h3>    
+            <p>This property specifies the name of the animation</p>
+            <code>
+                .animationName{
+                    height: 150px;
+                    width: 150px;
+                    background: red;
+                    position: relative;
+                    animation-name: slip;
+                    animation-duration: 7s;    
+                    }
+                
+                    @keyframes slip{
+                        from {left: 0px;}
+                        to {left: 500px;}
+                </code> <br><br>
+            <div class="previewAniName">
+            </div>
+            </div>
+        
+        <div class="example-code-card">
+            <h3>animation-duration</h3>    
+            <p>This property determines how long it will take the animation to complete 1 cycle</p>
+            <code>
+                .duration{
+                height: 150px;
+                width: 150px;
+                background: red;
+                position: relative;
+                animation-name: glide;
+                animation-duration: 2s;}
+                
+                @keyframes glide {
+                    from {left: 0px}    
+                    to {left: 800px}    
+                }
+            }
+                </code> <br><br>
+            <div class="previewduration">
+            </div>
+            </div>
+        
+        <div class="example-code-card">
+            <h3>animation-timing-function</h3>    
+            <p>determines the speed curve of the animation</p>
+            <code>
+             .timing{
+                height: 150px;
+                width: 150px;
+                background: red;
+                position: relative;
+                animation-name: move;
+                animation-duration: 6s;
+                animation-timing-function: ease
+            }
+            
+            @keyframes move{
+             from {left: 0px}   
+             to {left: 450px}
+            }
+                </code> <br><br>
+            <div class="previewaniTiming">
+            </div>
+            </div>
+        
+        <div class="example-code-card">
+            <h3>animation-delay</h3>    
+            <p>Determines when animation effect will start</p>
+            <code>.delay{
+                height: 150px;
+                width: 150px;
+                background: red;
+                position: relative;
+                animation-name: run;
+                animation-duration: 6s;
+                animation-delay: 2s;}
+        
+                @keyframes run{
+                    from {left: 0px}   
+                    to {left: 450px}   
+                }
+                </code> <br><br>
+            <div class="previewaniDelay">
+            </div>
+            </div>
+        
+        
+        <div class="example-code-card">
+            <h3>animation-iteration-count</h3>    
+            <p>Determines how many times an animation will play or cycle</p>
+            <code>
+                .iteration{
+                height: 150px;
+                width: 150px;
+                background: red;
+                position: relative;
+                animation-name: go;
+                animation-duration: 6s;
+                animation-iteration-count: 3;} 
+                
+                @keyframes go{
+                    from {left: 0px}   
+                    to {left: 450px}   
+                }   
+                }
+                </code> <br><br>
+            <div class="previewiteration">
+            </div>
+            </div>
+        
+        <div class="example-code-card">
+            <h3>animation-direction</h3>    
+            <p>Determines if animation is to be played forwards, backwards, or in alternate cycles</p>
+            <code>
+                .direction {
+                    width: 150px;
+                    height: 150px;
+                    background: red;
+                    position: relative;
+                    animation: myMove 5s;
+                    animation-iteration-count: infinite;
+                    animation-direction: normal;
+                  }
+                
+                @keyframes myMove{
+                0% {left: 0px; top: 0px;}
+                25% {left: 200px; top: 0px;}
+                50% {left: 200px; top: 20px;}
+                75% {left: 0px; top: 20px} 
+                100% {left: 0px; top: 0px}   
+                }
+                </code> <br><br>
+            <div class="previewdirection">
+            </div>
+            </div> <br>
+        
+        <div class="example-code-card">
+            <h3>animation-fill-mode</h3>    
+            <p>Determines a style for the element when the animation is not moving; before it begins, after it ends, or both</p>
+            <code>.fill{
+                width: 150px;
+                height: 150px;
+                background: red;
+                position: relative;
+                animation: theMove 5s;
+                animation-fill-mode: forwards;}
+        
+                @keyframes theMove{
+                from {left: 0px} 
+                to {left: 500px; background-color: purple;}    
+                }
+                </code> <br><br>
+            <div class="previewfill">
+            </div>
+            </div>
+        
+        <div class="example-code-card">
+            <h3>animation-play-state</h3>    
+            <p>Determines if animation is running or paused</p>
+            <code> .play{
+                width: 150px;
+                height: 150px;
+                background: red;
+                position: relative;
+                animation: noMove 5s;
+                animation-play-state: paused;}
+            
+                @keyframes noMove{
+                    0% {left: 0px; top: 0px;}
+                    25% {left: 200px; top: 0px;}
+                    50% {left: 200px; top: 20px;}
+                    75% {left: 0px; top: 20px} 
+                    100% {left: 0px; top: 0px}    
+                }
+            </code> <br><br>
+            <div class="previewplay">
+            </div>
+            </div>
+        
+        </section>
+        
+        
+        </main>
+        
+    
+    
+</body>
+</html>

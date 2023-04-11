@@ -1,0 +1,145 @@
+:root{
+    --main-color-100: hsl(50, 25%, 90%);
+    --main-color-400: hsl(50, 35%, 50%);
+    --main-color-800: hsl(50, 25%, 15%);
+    --main-color-200: hsl(50, 45%, 85%);
+    --main-color-600: hsl(50, 35%, 75%);
+    --accent-color-200: hsl(190, 35%, 90%);
+    --accent-color-400: hsl(190, 40%, 50%);
+    --accent-color-600: hsl(190, 40%, 30%);
+    --accent-color-800: hsl(190, 25%, 15%);
+    --font-body: "Fredoka", sans-serif;
+    --font-headings:"Roboto", sans-serif;
+    --font-code:"Source Code Pro", monospace;
+}
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-y: auto;}
+
+    body {
+        font-family: var(--font-main);
+        color: var(--main-color-800);
+        background: linear-gradient(hsl(218, 50%, 95%), hsl(218, 60%, 45%)) ;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 3fr 30rem; 
+        align-items: center;
+        grid-column: 1;
+      }
+
+
+
+
+      .dropdownmenu span{
+        padding: 15px;
+        text-align: center;
+        text-decoration: none;
+        color: darkblue;}
+        
+        .dropdownmenu{
+        display: block;
+        position: relative;
+        overflow: hidden;}
+        
+        .dropdownlinks a{
+        display:block;
+        padding: 8px;
+        text-align: left;
+        overflow: hidden;
+        }
+        
+        .dropdownlinks{
+        background-color: lightgray;
+        ;border: thin solid darkblue;
+        display: none;
+        overflow: hidden;
+        }
+        
+        
+.dropdownmenu:hover .dropdownlinks{display:block}
+
+
+#rightside{
+    display: grid;
+    grid-column: 2;
+    height: 100%;
+    text-align: center;
+   }
+   nav a{
+      background-color: aliceblue;    
+      text-align: center;    
+      display: block;
+      padding: 30px;
+      border-top: thin solid white;
+      border-bottom: thin solid white;
+      text-decoration: none;    
+      }
+      nav a:hover{
+          background: linear-gradient(blue, pink);    
+          }
+          
+          nav{
+          text-align: center;  
+          }
+#rightside a{
+background-color: aliceblue;    
+text-align: center;    
+display: block;
+padding: 10px;
+border-top: thin solid white;
+border-bottom: thin solid white;
+text-decoration: none;   
+}
+
+#rightside a:hover{
+background: linear-gradient(blue, pink);   
+}
+
+#resume{
+font-family: var(--font-body);
+text-align: left;
+background-color: var(--main-color-200);
+overflow-y: auto;
+border: thin solid black;
+padding-right: 5px;
+
+}
+
+#resume h2, h3, h4{
+font-family: var(--font-headings);
+padding: 5px;
+text-align: center;
+}
+
+#resume h2{
+text-align: center;
+}
+#resume h3{
+border-bottom: solid black;
+}
+
+#resume  h4 {
+border-bottom: thin solid black;
+}
+
+#resume p{
+padding: 5px;
+}
+
+li{
+margin-left: 5px;
+}
+
+
+img{
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+
+#text-center{
+text-align: center;
+}

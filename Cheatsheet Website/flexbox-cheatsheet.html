@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta author="Zack Johnson">
+    <meta keywords="Flexbox, terminology, properties, cheatsheet">
+    <meta description="cheatsheet page about flexbox properties">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Cheatsheet</title>
+
+    <link rel="stylesheet" href="styles.css">
+   
+   <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fredoka&family=Lato&family=Source+Code+Pro&display=swap');
+        </style>
+</head>
+<body>
+    <section class="left-column"> 
+        <h1>Flexbox Cheatsheet</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <div class="dropdownmenu">
+            <span><h3>Cheatsheets</h3></span>
+            <div class="dropdownlinks">
+            
+            <a href="html-cheatsheet.html">HTML Cheatsheet</a>
+            <a href="flexbox-cheatsheet.html">Flexbox Cheatsheet</a>
+            <a href="ui-properties.html">UI Properties Cheatsheet</a>
+            <a href="queries-cheatsheet.html">Queries Cheatsheet</a>
+            <a href="ARIA-cheatsheet.html">ARIA Cheatsheet</a>
+            <a href="transformation-cheatsheet.html">Transformations Cheatsheet</a>
+        
+        </div>
+        </div>
+        <div class="dropdownmenu">
+            <span><h3>Web Patterns</h3></span>
+            <div class="dropdownlinks">
+            <a href="menus.html">Menus</a>
+            <a href="widgets.html">Widgets</a>
+            <a href="media.html">Media</a>
+            <a href="cards.html">Cards</a>
+    
+            </div>
+        </div>
+        </nav>
+        <footer><span>Developed by: Zack Johnson | Github: zackjohnson6 <br><small>5/14/22</small><br><small>CIS233DA | Section 12988</small></span>
+        
+        </footer>    
+        </section>
+        <main>
+        <h2>Terminology</h2>
+        <dl>
+        <div class="term-group">
+        <dt>Flex Container:</dt>
+        <dd> A grouping of items that will be styled as one, and will be grouped as one on a webpage.</dd>
+        </div>
+        
+        <div class="term-group">
+        <dt>Flex Items: </dt>
+        <dd> Elements that will be present within a flex container and visible as grouped together on a webpage.</dd>
+        </div>
+        <div class="term-group">
+        <dt>Flex Directions: </dt>
+        <dd> How the elements within a container will be displayed; the elements' orientation</dd>
+        </div>
+        
+        <div class="term-group">
+        <dt>Main Axis: </dt>
+        <dd> The direction in which the content is displayed, either horizontally or vertically.</dd>
+        </div>
+        
+        <div class="term-group">
+        <dt>Main Size Properties: </dt>
+        <dd> The length of the content that goes along the main axis </dd>
+        </div>
+        
+        <div class="term-group">
+        <dt>Cross Axis: </dt>
+        <dd> The axis in which block elements will be stacked; the direction that new lines of flex items are placed.</dd>    
+        </div>
+        
+        <div class="term-group">
+        <dt>Cross Size Properties: </dt>
+        <dd> The length of the elements along the cross axis</dd>    
+        </div>
+        </dl>
+        
+        
+        
+        <h2>Properties</h2>
+        <section class="container">
+        <div>
+        <h3>Flex Container Properties</h3>
+        <dl>
+        <div class="property-group">
+        <dt>align-content:</dt>
+        <dd><code>value; center <span>/* packs lines towards the center */</span></code></dd>
+        <dd><code>value; stretch <span>/* stretches lines to take up remaining space */</span></code></dd>
+        <dd><code>value; flex-start <span>/* lines packed towards start of container */</span></code></dd>
+        <dd><code>value; flex-end <span>/* lines packed towards end of container */</span></code></dd>
+        <dd><code>value; space-between <span>/* lines are evenly distributed throughout the container */</span></code></dd>
+        <dd><code>value; space-around <span>/* lines are evenly distributed, but spaces on either end are halved */</span></code></dd>
+        <dd><code>value; space-evenly <span>/* lines are evenly distributed with even spacing around them */</span></code></dd>
+        </div>
+        
+        <div class="property-group">
+        <dt>align-items</dt>
+        <dd><code>value; stretch <span>/* items stretched to fit into container */</span></code></dd>
+        <dd><code>value; center <span>/* items placed towards center of container */</span></code></dd>
+        <dd><code>value; flex-start <span>/* items positioned at start of container */</span></code></dd>
+        <dd><code>value; flex-end <span>/* items positioned towards end of container */</span></code></dd>
+        <dd><code>value; baseline <span>/* items positioned at baseline of container */</span></code></dd>
+        </div>
+        
+        <div class="property-group">
+        <dt>display</dt>
+        <dd><code>value; inline <span>/* elements displayed inline with each other, as seen in span */</span></code></dd>
+        <dd><code>value; black <span>/* elements displayed in a block, such as with p */</span></code></dd>
+        <dd><code>value; contents <span>/* makes container disappear; only child elements appear */</span></code></dd>
+        <dd><code>value; flex <span>/* displays elements as block-level container */</span></code></dd>
+        <dd><code>value; grid <span>/* displays elements as block-level grid container */</span></code></dd>
+        <dd><code>value; inline-block <span>/* displays element as inline-block container; element is inline, but height and width can be changed */</span></code></dd>
+        <dd><code>value; inline-flex <span>/* displays as inline-level  flex container */</span></code></dd>
+        </div>
+        
+        <div class="property-group">
+        <dt>flex-direction</dt>
+        <dd><code>value; row <span>/* items displayed horizontally */</span></code></dd>
+        <dd><code>value; row-reverse <span>/* items displayed in row, but in reverse order */</span></code></dd>
+        <dd><code>value; column <span>/* items displayed as a vertical column */</span></code></dd>
+        <dd><code>value; column-reverse <span>/* items displayed vertically, but in reverse order */</span></code></dd>
+        </div>
+        
+        <div class="property-group">
+        <dt>flex-wrap</dt>
+        <dd><code>value; nowrap <span>/* flex items will not wrap */</span></code></dd>
+        <dd><code>value; wrap <span>/* flex items will wrap as necessary */</span></code></dd>
+        <dd><code>value; wrap-reverse <span>/* items will wrap as necessary, in reverse order */</span></code></dd>
+        </div>
+        
+        <div class="property-group">
+        <dt>flex-flow</dt>
+        <dd><code>value; flex-direction <span>/* indicates content direction based on flex-direction values */</span></code></dd>
+        <dd><code>value; flex-wrap <span>/* indicates that content will wrap depending on text-wrap values */</span></code></dd>
+        </div>
+        
+        <div class="property-group">
+        <dt>justify-content</dt>
+        <dd><code>value; flex-start <span>/* items positioned at beginning of container */</span></code></dd>
+        <dd><code>value; flex-end <span>/* items positioned at end of container */</span></code></dd>
+        <dd><code>value; center <span>/* items positioned towards the center */</span></code></dd>
+        <dd><code>value; space-between <span>/* items will have spaces between them  */</span></code></dd>
+        <dd><code>value; space-around <span>/* items will have spaces before, between, and after */</span></code></dd>
+        <dd><code>value; space-evenly <span>/* items have equal space all around them */</span></code></dd>
+        </div>
+        </dl>
+        </div>
+        
+        <div>
+        <h3>Flex Item Properties</h3>
+        <dl>
+        <div class="property-group">
+        <dt>align-self</dt>
+        <dd><code>value; auto <span>/* element uses parent container align-items property */</span></code></dd>
+        <dd><code>value; stretch <span>/* element positioned to fit container */</span></code></dd>   
+        <dd><code>value; center <span>/* element positioned at center of container */</span></code></dd>
+        <dd><code>value; flex-start <span>/* items positioned at beginning of container */</span></code></dd>
+        <dd><code>value; flex-end <span>/* items positioned at end of container */</span></code></dd>
+        <dd><code>value; baseline <span>/* items positioned at baseline of container */</span></code></dd>
+        </div>
+        
+        <div class="property-group">
+        <dt>flex</dt>    
+        <dd><code>value; flex-grow <span>/* usually a number determining how much an element will grow in relation to the rest of the flex items */</span></code></dd>
+        <dd><code>value; flex-shrink <span>/* usually a number determining how much an element will shrink in relation to the rest of the flex items */</span></code></dd>
+        <dd><code>value; flex-basis <span>/* length of an item; can use px, %, or any other length unit */</span></code></dd>
+        </div>
+        
+        <div class="property-group">
+        <dt>flex-basis</dt>
+        <dd><code>value; number <span>/* unit specifying the length of the item */</span></code></dd>
+        <dd><code>value; auto <span>/* makes length equal to length of flex item */</span></code></dd>
+        
+        <div class="property-group">
+        <dt>flex-grow</dt>
+        <dd><code>value; number <span>/* unit specifying how much item will grow in relation to the rest of the flex items */</span></code></dd>   
+        </div>
+        
+        <div class="property-group">
+        <dt>flex-shrink</dt>
+        <dd><code>value; number <span>/* unit specifying how much item will shrink in relation to the rest of the flex items */</span></code></dd>    
+        </div>
+        
+        <div class="property-group">
+        <dt>order</dt> 
+        <dd><code>value; number <span>/* specifies order for the flex item */</span></code></dd>  
+        </div>
+        
+        
+        
+        </div>
+        
+        
+        
+        
+        </dl>
+        
+        
+        
+        
+        
+        </div>
+        
+        
+        </section>
+        
+        
+        </main>
+
+</body>
+</html>

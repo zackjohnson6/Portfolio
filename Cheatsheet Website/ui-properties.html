@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta author="Zack Johnson">
+    <meta keywords="user interface, properties, CSS, UI, cheatsheet">
+    <meta description="information regarding UI properties in CSS">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI Properties</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fredoka&family=Lato&family=Source+Code+Pro&display=swap');
+        </style>
+</head>
+<body>
+
+    <section class="left-column"> 
+        <h1>UI Properties Cheatsheet</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <div class="dropdownmenu">
+            <span><h3>Cheatsheets</h3></span>
+            <div class="dropdownlinks">
+            
+            <a href="html-cheatsheet.html">HTML Cheatsheet</a>
+            <a href="flexbox-cheatsheet.html">Flexbox Cheatsheet</a>
+            <a href="ui-properties.html">UI Properties Cheatsheet</a>
+            <a href="queries-cheatsheet.html">Queries Cheatsheet</a>
+            <a href="ARIA-cheatsheet.html">ARIA Cheatsheet</a>
+            <a href="transformation-cheatsheet.html">Transformations Cheatsheet</a>
+        
+        </div>
+        </div>
+            
+        <div class="dropdownmenu">
+            <span><h3>Web Patterns</h3></span>
+            <div class="dropdownlinks">
+            <a href="menus.html">Menus</a>
+            <a href="widgets.html">Widgets</a>
+            <a href="media.html">Media</a>
+            <a href="cards.html">Cards</a>
+    
+            </div>
+        </div>
+        </nav>
+        <footer><span>Developed by: Zack Johnson | Github: zackjohnson6 <br><small>5/14/22</small><br><small>CIS233DA | Section 12988</small></span>
+        
+        </footer>  
+    </section>
+
+    <main>
+
+        <section class="container">
+        <div>
+        <h2>UI Properties</h2>
+        <dl>
+        <div class="property-group">
+        <dt>Border Radius</dt>
+        <dd><code>Value; length<span>/* Defines shape of corners. The higher the number, the more rounded the corners will be */</span></code></dd>
+        <dd><code>Value; %<span>/* Determines shape of corners using percentages */</span></code></dd>
+        </div>
+        
+        <div class="property-group">
+        <dt>Box Shadow</dt>
+        <dd><code>value; none <span>/* default, no shadow */</span></code></dd>
+        <dd><code>value; h-offset <span>/* horizontal offset of shadow. Positive values put shadow to the right, negative values to the left */</span></code></dd>
+        <dd><code>value; v-offset <span>/* vertical offset of shadow. Positive values put shadow below the box, negative values above the box */</span></code></dd>
+        <dd><code>value; blur <span>/* blurs the shadow for styling purposes. Higher values will increase blur */</span></code></dd>
+        <dd><code>value; spread <span>/* determines size of shadow. Positive values increase size, negative values decrease size */</span></code></dd>
+        <dd><code>value; color <span>/* determines the color of the shadow */</span></code></dd>
+        </div>
+        
+        <div class="property-group">
+        <dt>Colors</dt>
+        <dd><code>value; color <span>/* Sets color of the text */</span></code></dd>
+        <dd><code>value; background-color <span>/* Sets color of the document background */</span></code></dd>
+        <dd><code>Color Names <span>/* Determines Color based on color name*/</span></code></dd>
+        <dd><code>RGB Colors; rgb(x x x) <span>/* Determines color based on RGB values;  */</span></code></dd>
+        <dd><code>Hexadecimal Colors; #rrggbb  <span>/* Determines colors based on hexadecimal values */</span></code></dd>
+        <dd><code>HSL Color Values; hsl(x x x) <span>/* Hue Saturation Lightness. Hue determines the color on a 360 degree field, saturation determines the amount of color present, and lightness determines the  */</span></code></dd>
+        </div>
+        
+        <div class="property-group">
+        <dt>Fonts</dt>
+        <dd><code>value; font-size <span>/* used to determine size of the font */</span></code></dd>
+        <dd><code>value; font-family <span>/* Sets the desired font style, and includes two backups in case the browser does not recognize the first desired font  */</span></code></dd>
+        <dd><code>value; font-style <span>/* Sets a styling of the font, such as bold or italic */</span></code></dd>
+        <dd><code>value; font-weight <span>/* used to make characters thicker or thinner in appearance */</span></code></dd>
+        </div>
+        
+        <div class="property-group">
+        <dt>Lists</dt>
+        <dd><code>value; ol <span>/* Ordered List tag. Creates a list element that is in an ordered, such as a numbered list. Includes an 'li' child tag for its list items. */</span></code></dd>
+        <dd><code>value; ul <span>/* Unordered list tag. Creates a list element that does not have an order, and is usually displayed with bullet points. Includes an 'li' child tag for its list items. */</span></code></dd>
+        <dd><code>value; dl <span>/* A description list tag. Used to create a list that can have different terms and their definitions included. Uses 'dt' and 'dd' tags for the defined term and the definition, respectively. */</span></code></dd>
+        <dd><code>value; li <span>/* list item element. Used to create the items within a list */</span></code></dd>
+        <dd><code>value; dt <span>/* Description term element. Used to create the value of the term that will be defined */</span></code></dd>
+        <dd><code>value; dd <span>/* Description definition element. Used to add the definition of the description term in a list */</span></code></dd>
+        </div>
+        
+        <div class="property-group">
+        <dt>Background</dt>
+        <dd><code>value; background-color <span>/* determines background color to be used. Can use color name, RGB, hexadecimal, or HSL */</span></code></dd>
+        <dd><code>value; background-image <span>/* specifies one or more background images to be used on a document */</span></code></dd>
+        <dd><code>value; background-position <span>/* determines position of the background image(s) */</span></code></dd>
+        <dd><code>value; background-size <span>/* determines size of the background image */</span></code></dd>
+        <dd><code>value; background-repeat <span>/* determines how the background image will be repeated throughout the document */</span></code></dd>
+        <dd><code>value; background-origin <span>/* determines the positioning area of the background images; where the images can be placed on the document */</span></code></dd>
+        </div>
+        
+        
+        </dl>
+        </div>
+        
+        
+        
+        </section>
+        
+        
+        </main>
+
+
+</body>
+</html>

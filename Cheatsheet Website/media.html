@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta author="Zack Johnson">
+    <meta keywords="caption, media, image, audio, video">
+    <meta description="a cheatsheet page including different media that can be added to a page">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fredoka&family=Lato&family=Source+Code+Pro&display=swap');
+        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>   
+</head>
+<body>
+    <section class="left-column"> 
+        <h1>Media Cheatsheet</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <div class="dropdownmenu">
+            <span><h3>Cheatsheets</h3></span>
+            <div class="dropdownlinks">
+            
+            <a href="html-cheatsheet.html">HTML Cheatsheet</a>
+            <a href="flexbox-cheatsheet.html">Flexbox Cheatsheet</a>
+            <a href="ui-properties.html">UI Properties Cheatsheet</a>
+            <a href="queries-cheatsheet.html">Queries Cheatsheet</a>
+            <a href="ARIA-cheatsheet.html">ARIA Cheatsheet</a>
+            <a href="transformation-cheatsheet.html">Transformations Cheatsheet</a>
+        
+        </div>
+        </div>
+       
+        <div class="dropdownmenu">
+            <span><h3>Web Patterns</h3></span>
+            <div class="dropdownlinks">
+            <a href="menus.html">Menus</a>
+            <a href="widgets.html">Widgets</a>
+            <a href="media.html">Media</a>
+            <a href="cards.html">Cards</a>
+    
+            </div>
+        </div>
+        </nav>
+        <footer><span>Developed by: Zack Johnson | Github: zackjohnson6 <br><small>5/14/22</small><br><small>CIS233DA | Section 12988</small></span>
+        
+        </footer>  
+    </section>
+
+    <main>
+        <section class="container">
+            <div>
+            <dl>
+            <div class="property-group">
+            <dt>Caption and Citation</dt>
+            <dd>
+                <fig class="image-caption">
+                    <picture>
+                        <source media="(min-width: 900px)" srcset="https://www.nme.com/wp-content/uploads/2021/07/RickAstley2021-696x442.jpg">
+
+                        <source media="(min-width: 400px)" srcset="https://www.nme.com/wp-content/uploads/2021/07/RickAstley2021-696x442.jpg">
+
+                        <img src="images/RickAstley2021.jpg" alt="rick astley" width="350px">
+                    </picture>
+                    <figcaption>Rick Astley</figcaption>
+                    <p class="image-source">Source: https://www.nme.com/wp-content/uploads/2021/07/RickAstley2021-696x442.jpg</p>
+                </fig>
+
+                <p><small>HTML: <code>
+
+                    &lt;fig class="image-caption"&gt;
+                    &lt;picture&gt;
+                    &lt;source media="(min-width: 900px)" srcset="https://www.nme.com/wp-content/uploads/2021/07/RickAstley2021-696x442.jpg"&gt;
+    
+                    &lt;source media="(min-width: 400px)" srcset="https://www.nme.com/wp-content/uploads/2021/07/RickAstley2021-696x442.jpg"&gt;
+    
+                    &lt;img src="images/RickAstley2021.jpg" alt="rick astley" width="350px"&gt;
+                    &lt;/picture&gt;
+                    &lt;figcaption&gt; Rick Astley &lt;/figcaption&gt;
+                    &lt;p class="image-source"&gt; Source: https://www.nme.com/wp-content/uploads/2021/07/RickAstley2021-696x442.jpg&lt;/p&gt;
+                    &lt;/fig&gt;
+
+
+                </code></small></p>
+
+                <p><small>CSS:<code>
+                    .image-caption{
+                        background-color: white;
+                        border: thin solid var(--accent-color-600);
+                        border-radius: .5rem .5rem .5rem .5rem;
+                        width: 50%;
+                        margin: auto;
+                        padding: 1rem;
+                        box-shadow: 10px 10px grey;
+                        display: grid;
+                        grid-template-columns: 1fr;
+                        grid-template-rows: 1fr;
+                        }
+                       
+                      picture{
+                        grid-area: 1/1;
+                      }
+                      
+                      figcaption{
+                        grid-area: 1/1;
+                        padding: .5rem;
+                        height: max-content;
+                        background-color: black;
+                        text-align: center;
+                        color: var(--main-color-100);
+                      }
+                </code></small></p>
+            </dd>
+            </div>
+            
+            
+            <div class="property-group">
+                <dt>Code Block</dt>
+                <dd>
+                    <fig class="code-block">
+                        <figcaption>HTML Code</figcaption>
+                        <pre><code>
+
+                            &lt;fig class="code-block"&gt;
+                            &lt;figcaption&gt;HTML Code&lt;/figcaption&gt;
+                            &lt;pre&gt;&lt;code&gt; 
+                            &lt;!-- Add example code here --&gt;
+                            &lt;/code&gt;&lt;/pre&gt;
+                            &lt;/fig&gt;
+
+
+                        </code></pre>
+                    </fig>
+
+                    <p>CSS: <code> .code-block{
+                        background-color: white;
+                        border: thin solid var(--accent-color-600);
+                        border-radius: .5rem .5rem .5rem .5rem;
+                        width: 90%;
+                        margin: auto;
+                        padding: 1rem;
+                        box-shadow: 10px 10px grey;
+                        display: grid;
+                        grid-template-columns: 1fr;
+                        grid-template-rows: 1fr;
+                      }
+                      
+                      pre{
+                        font-family: var(--font-code);
+                        background-color: var(--main-color-800);
+                        color: var(--main-color-100);
+                        padding: .5rem;
+                        overflow: auto;
+                        border-radius: .5rem;
+                        float: inline-start;
+                      }</code></p>
+                </dd>
+                </div>
+            
+            <div class="property-group">
+                <dt>Image Slide Show</dt>
+                <dd>
+                    <div id="slideshow">
+                        <div>
+                            <img src="images/walter.jpg" alt="walter payton" width="400px" height="400px">
+                        </div>
+                        
+                        <div>
+                            <img src="images/devin.jpg" alt="devin hester" width="400px" height="400px">
+                        </div>
+                        
+                        <div>
+                            <img src="images/soldier.jpg" alt="soldier field" width="400px" height="400px">
+                        </div>
+                        
+                        <div>
+                            <!--image found on web. "Chicago Skyline - Chicago Bears Support" by celikins is marked with CC BY-NC-ND 2.0. -->
+                            <img src="images/skyline.jpg" alt="chicago skyline" width="400px" height="400px">
+                        </div>
+                
+                        <div>
+                            <!--Image found on web. "Chicago Bears" by Mike Morbeck is marked with CC BY-SA 2.0.-->
+                            <img src="images/team.jpg" alt="bears team" width="400px" height="400px">
+                        </div>
+                
+                        <div>
+                            <!--image found on web. "It's Like Making A Trip To Mecca If You're A Bears Fan" by Señor Codo is marked with CC BY-SA 2.0. -->
+                            <img src="images/lion.jpg" alt="lion statue with helmet" width="400px" height="400px">
+                        </div>
+                    </div>
+                    <p>HTML: <code>
+
+                        &lt;div id="slideshow"&gt;
+                        &lt;div&gt;
+                        &lt;img src="images/walter.jpg" alt="walter payton" width="400px" height="400px"&gt;
+                        &lt;/div&gt;
+                            
+                        &lt;div&gt;
+                        &lt;img src="images/devin.jpg" alt="devin hester" width="400px" height="400px"&gt;
+                        &lt;/div&gt;
+                            
+                        &lt;div&gt;
+                        &lt;img src="images/soldier.jpg" alt="soldier field" width="400px" height="400px"&gt;
+                        &lt;/div&gt;
+                            
+                        &lt;div&gt;
+                                <!--image found on web. "Chicago Skyline - Chicago Bears Support" by celikins is marked with CC BY-NC-ND 2.0. -->
+                                &lt;img src="images/skyline.jpg" alt="chicago skyline" width="400px" height="400px"&gt;
+                                &lt;/div&gt;
+                    
+                                &lt;div&gt;
+                                <!--Image found on web. "Chicago Bears" by Mike Morbeck is marked with CC BY-SA 2.0.-->
+                                &lt;img src="images/team.jpg" alt="bears team" width="400px" height="400px"&gt;
+                                &lt;/div&gt;
+                    
+                                &lt;div&gt;
+                                <!--image found on web. "It's Like Making A Trip To Mecca If You're A Bears Fan" by Señor Codo is marked with CC BY-SA 2.0. -->
+                                &lt;img src="images/lion.jpg" alt="lion statue with helmet" width="400px" height="400px"&gt;
+                                &lt;/div&gt;
+
+
+                    </code></p>
+
+                    <p>CSS: <code>#slideshow{
+                        margin-top: 80px;
+                        margin-bottom: 80px;
+                        margin-left: auto;
+                        margin-right: auto;
+                        position: relative;
+                        height: 400px;
+                        width: 400px;
+                        padding: 10px;
+                        box-shadow: 0 0 45px orangered;
+                      }
+                      
+                      #slideshow div{
+                        position: absolute;
+                        top: 10px;
+                        bottom: 10px;
+                        left: 10px;
+                        right: 10px;
+                      }</code></p>
+
+                      <p>JavaScript: <code>$("#slideshow div:gt(0)").hide();
+
+                        setInterval(function(){
+                            $('#slideshow div:first')
+                            .fadeOut(1000)
+                            .next()
+                            .fadeIn(1000)
+                            .end()
+                            .appendTo('#slideshow');
+                        
+                        }, 3000)</code></p>
+
+                </dd>
+                </div>
+                
+            <div class="property-group">
+                <dt>Video</dt>
+                <dd>
+                    <video src="https://mdn.github.io/learning-area/html/multimedia-and-embedding/video-and-audio-content/rabbit320.webm" controls muted></video>
+
+
+                <p><small>HTML: <code>&lt;video src="https://mdn.github.io/learning-area/html/multimedia-and-embedding/video-and-audio-content/rabbit320.webm" controls muted&gt; &lt;/video&gt;
+                </code></small></p>
+
+                </dd>
+                </div>
+            
+            <div class="property-group">
+                <dt>Audio</dt>
+                <dd>
+                    <audio controls>
+                        <source src="images/Never gonna give you up.mp3" type="audio/mp3">
+
+                    </audio>
+                    <a href="https://www.azlyrics.com/lyrics/rickastley/nevergonnagiveyouup.html">Text Transcript</a>
+
+                </dd>
+
+                <p><small>HTML: <code>
+                    &lt;audio controls&gt;
+                    &lt;source src="images/Never gonna give you up.mp3" type="audio/mp3"&gt;
+
+                    &lt;/audio&gt;
+                    &lt;a href="https://www.azlyrics.com/lyrics/rickastley/nevergonnagiveyouup.html"&gt;Text Transcript &lt;/a&gt;
+            </code></small></p>
+                </div>
+            
+            <div class="property-group">
+                <dt>Device iFrame</dt>
+                <dd><iframe width="590" height="350" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow=" autoplay;" allowfullscreen></iframe></dd>
+                </div>
+            
+                <p><small>HTML: <code>
+                    &lt;iframe width="790" height="444" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow=" autoplay;" allowfullscreen&gt; &lt;/iframe&gt;
+                </code></small></p>
+            </dl>
+         
+             
+            
+            
+            </div>
+            
+            
+            
+            </section>
+            
+            
+            </main>
+    <script src="js/slideshow.js"></script>
+</body>
+</html>

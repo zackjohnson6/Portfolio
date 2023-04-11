@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta author="Zack Johnson">
+    <meta keywords="queries, CSS, media, import, font-face">
+    <meta description="a cheatsheet with information about CSS queries">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Queries Cheatsheet</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fredoka&family=Lato&family=Source+Code+Pro&display=swap');
+        </style>
+</head>
+<body>
+    <section class="left-column"> 
+        <h1>Queries Cheatsheet</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <div class="dropdownmenu">
+            <span><h3>Cheatsheets</h3></span>
+            <div class="dropdownlinks">
+            
+            <a href="html-cheatsheet.html">HTML Cheatsheet</a>
+            <a href="flexbox-cheatsheet.html">Flexbox Cheatsheet</a>
+            <a href="ui-properties.html">UI Properties Cheatsheet</a>
+            <a href="queries-cheatsheet.html">Queries Cheatsheet</a>
+            <a href="ARIA-cheatsheet.html">ARIA Cheatsheet</a>
+            <a href="transformation-cheatsheet.html">Transformations Cheatsheet</a>
+        
+        </div>
+        </div>
+        <div class="dropdownmenu">
+            <span><h3>Web Patterns</h3></span>
+            <div class="dropdownlinks">
+            <a href="menus.html">Menus</a>
+            <a href="widgets.html">Widgets</a>
+            <a href="media.html">Media</a>
+            <a href="cards.html">Cards</a>
+    
+            </div>
+        </div>
+        </nav>
+        <footer><span>Developed by: Zack Johnson | Github: zackjohnson6 <br><small>5/14/22</small><br><small>CIS233DA | Section 12988</small></span>
+        
+        </footer>  
+    </section>
+    <main>
+
+        <section class="container">
+        <div>
+        <h2>@Media Queries</h2>
+        <dl>
+        <div class="property-group">
+        <dt>print</dt>
+        <dd><code>Value; @media all<span>/* Default. Used for all media types. */</span></code></dd>
+        </div>
+        
+        
+        <div class="property-group">
+            <dt>screen</dt>
+            <dd><code>Value; @media screen<span>/* used for computer, tablet, and smartphone screens */</span></code></dd>
+            </div>
+        
+        <div class="property-group">
+            <dt>speech</dt>
+            <dd><code>Value; @media speech<span>/* Used for screenreaders that "reads" the page out loud for users with visual limitations */</span></code></dd>
+            </div>
+            
+        <div class="property-group">
+            <dt>width</dt>
+            <dd><code>Value; @media (width) <span>/* Sets width of the viewport */</span></code></dd>
+            </div>
+        
+        <div class="property-group">
+            <dt>height</dt>
+            <dd><code>Value; @media (height) <span>/* Sets height of the viewport */</span></code></dd>
+            </div>
+        
+        <div class="property-group">
+            <dt>resolution</dt>
+            <dd><code>Value; @media (resolution) <span>/* Resolution of the output device */</span></code></dd>
+            </div>
+        
+        <div class="property-group">
+            <dt>orientation </dt>
+            <dd><code>Value; @media (orientation) <span>/* Orientation of the viewport; landscape or portrait */</span></code></dd>
+            </div>
+        
+        <div class="property-group">
+            <dt>aspect-ratio</dt>
+            <dd><code>Value; @media (aspect-ratio) <span>/* width vs height ratio of the viewport */</span></code></dd>
+            </div>
+        
+        <div class="property-group">
+            <dt>color</dt>
+            <dd><code>Value; @media (color) <span>/* sets color output of output device */</span></code></dd>
+            </div>
+        
+        </dl>
+        <h2>@Import Query</h2>
+        <dl>
+        <div class="property-group">
+            <dt>Import</dt>
+            <dd><code>Value; @import url()<span>/* Allows you to import a style or stylesheet into another stylesheet  */</span></code></dd>
+             </div>
+        </dl>
+        
+        <h2>Font-Face Queries</h2>
+        <dl>
+        <div class="property-group">
+            <dt>Font-face</dt>
+            <dd><code>Value; @font-face<span>/* Allows developers to use fonts that are not considered "web safe" */</span></code></dd>
+         </div>   
+        
+        <div class="property-group">
+            <dt>font-family</dt>
+            <dd><code>Value; @font-face {font-family: x} <span>/* Defines the name of the font to be used */</span></code></dd>
+         </div>  
+        
+         <div class="property-group">
+            <dt>src</dt>
+            <dd><code>Value; @font-face {src href= } <span>/* Determines the URL that the font style will be downloaded from */</span></code></dd>
+         </div>  
+        
+         <div class="property-group">
+            <dt>font-stretch</dt>
+            <dd><code>Value; @font-face{font-stretch: x} <span>/* Determines if font should be stretched. Default value is no stretch */</span></code></dd>
+         </div>  
+        
+         <div class="property-group">
+            <dt>font-style</dt>
+            <dd><code>Value; @font-face{font-style: x}<span>/* Determines if the font should have any styling, such as italics */</span></code></dd>
+         </div>  
+        
+         <div class="property-group">
+            <dt>font-weight</dt>
+            <dd><code>Value; @font-face{font-weight: x}<span>/* Defines the boldness level of the font */</span></code></dd>
+         </div>   
+        
+        </dl>
+        
+        </div>
+        
+        
+        
+        </section>
+        
+        
+        </main>
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta author="Zack Johnson">
+    <meta keywords="menus, vertical, horizontal, cheatsheet, display">
+    <meta description="a cheatsheet on menu styles">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menus</title>
+
+    <link rel="stylesheet" href="styles.css">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fredoka&family=Lato&family=Source+Code+Pro&display=swap');
+        </style>
+</head>
+<body>
+    <section class="left-column"> 
+        <h1>Menus</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <div class="dropdownmenu">
+            <span><h3>Cheatsheets</h3></span>
+            <div class="dropdownlinks">
+            
+            <a href="html-cheatsheet.html">HTML Cheatsheet</a>
+            <a href="flexbox-cheatsheet.html">Flexbox Cheatsheet</a>
+            <a href="ui-properties.html">UI Properties Cheatsheet</a>
+            <a href="queries-cheatsheet.html">Queries Cheatsheet</a>
+            <a href="ARIA-cheatsheet.html">ARIA Cheatsheet</a>
+            <a href="transformation-cheatsheet.html">Transformations Cheatsheet</a>
+        
+        </div>
+        </div>
+        <div class="dropdownmenu">
+            <span><h3>Web Patterns</h3></span>
+            <div class="dropdownlinks">
+            <a href="menus.html">Menus</a>
+            <a href="widgets.html">Widgets</a>
+            <a href="media.html">Media</a>
+            <a href="cards.html">Cards</a>
+    
+            </div>
+        </div>
+        </nav>
+        <footer><span>Developed by: Zack Johnson | Github: zackjohnson6 <br><small>5/14/22</small><br><small>CIS233DA | Section 12988</small></span>
+        
+        </footer>  
+    </section>
+
+    <main>
+
+        <section class="container">
+        <div>
+        <dl>
+        <div class="property-group">
+        <dt>Horizontal Menu</dt>
+        <dd>
+        <nav id="horizontal">
+            <a href="fake.html">Fake Link 1</a>
+            <a href="fake2.html">Fake Link 2</a>
+        </nav>
+        <p>CSS: <code>{
+            display: inline;
+        }</code></p>
+        </dd>
+        </div>
+        
+        
+        <div class="property-group">
+            <dt>Vertical Menu</dt>
+            <dd>
+                <nav id="vertical">
+                    <a href="fake.html">Fake Link</a>
+                    <a href="fake.html">Fake Link 2</a>
+                </nav>
+                <p>CSS: <code>{
+                    display: block;
+                    width: 60px;
+                }</code></p>
+            </dd>
+            </div>
+        
+        <div class="property-group">
+            <dt>Breadcrumb Menu</dt>
+            <dd><ul id="breadcrumb">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Video Games</a></li>
+                <li><a href="#">Cheat Codes</a></li>
+                <li>Elden Ring</li>
+              </ul></dd>
+
+              <p>CSS: <code>#breadcrumb li{
+                display: inline;
+                padding: 5px;
+                }
+                
+                ul#breadcrumb li+li:before {
+                    padding: 8px;
+                    color: black;
+                    content: "/\00a0";
+                  }</code></p>
+            </div>
+            
+        <div class="property-group">
+            <dt>Menu With Sub Menus</dt>
+            <dd><nav>
+                <div class="dropdownmenu">
+                <span><h3>Cheatsheets</h3></span>
+                <div class="dropdownlinks">
+                
+                <a href="html-cheatsheet.html">HTML Cheatsheet</a>
+                <a href="flexbox-cheatsheet.html">Flexbox Cheatsheet</a>
+                <a href="ui-properties.html">UI Properties Cheatsheet</a>
+                <a href="queries-cheatsheet.html">Queries Cheatsheet</a>
+                <a href="ARIA-cheatsheet.html">ARIA Cheatsheet</a>
+                <a href="transformation-cheatsheet.html">Transformations Cheatsheet</a>
+            
+            
+    
+    
+            </div>
+            </div>
+        </nav>    
+                
+                
+                <nav> <div class="dropdownmenu">
+                <span><h3>Web Patterns</h3></span>
+                <div class="dropdownlinks">
+                <a href="menus.html">Menus</a>
+                <a href="widgets.html">Widgets</a>
+                <a href="media.html">Media</a>
+                <a href="cards.html">Cards</a>
+        
+                </div>
+            </div></nav>
+            <p>CSS: <code>.dropdownmenu span{
+                padding: 15px;
+                text-align: center;
+                text-decoration: none;
+                color: darkblue;}
+                
+                .dropdownmenu{
+                display: block;
+                position: relative;
+                }
+                
+                .dropdownlinks a{
+                display:block;
+                padding: 8px;
+                text-align: left;
+               
+                }
+                
+                .dropdownlinks{
+                background-color: lightgray;
+                ;border: thin solid darkblue;
+                display: none;
+                
+                }
+            </code></p>
+            </dd>
+            </div>
+        
+        
+        
+        </dl>
+        
+        </div>
+        
+        
+        
+        </section>
+        
+        
+        </main>
+
+</body>
+</html>
