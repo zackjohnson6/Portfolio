@@ -1,0 +1,1 @@
+select * from rental_info where ReturnDate > dueDate OR ReturnDate is NULL
